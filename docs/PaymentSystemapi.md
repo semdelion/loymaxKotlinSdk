@@ -1,0 +1,47 @@
+# PaymentSystemapi
+
+All URIs are relative to *https://saray.loymax.tech/publicapi*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**paymentSystemGetPaymentSystems**](PaymentSystemapi.md#paymentSystemGetPaymentSystems) | **GET** v1.2/paymentSystem | Получить список платежных систем.
+
+
+
+Получить список платежных систем.
+
+### Example
+```kotlin
+// Import classes:
+//import loymax.sdk.*
+//import loymax.sdk.infrastructure.*
+//import loymax.sdk.models.*
+
+val apiClient = ApiClient()
+val webService = apiClient.createWebservice(PaymentSystemapi::class.java)
+val from : kotlin.Int = 56 // kotlin.Int | From.
+val count : kotlin.Int = 56 // kotlin.Int | Count.
+
+val result : ResultModelOfPagedViewModelOfPaymentSystemViewModel = webService.paymentSystemGetPaymentSystems(from, count)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **from** | **kotlin.Int**| From. |
+ **count** | **kotlin.Int**| Count. | [optional]
+
+### Return type
+
+**ResultModelOfPagedViewModelOfPaymentSystemViewModel**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
