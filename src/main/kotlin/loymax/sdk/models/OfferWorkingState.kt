@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Рабочее состояние акции.
  *
- * Values: stopped,running
+ * Values: STOPPED,RUNNING
  */
 
 enum class OfferWorkingState(val value: kotlin.String) {
 
     @Json(name = "Stopped")
-    stopped("Stopped"),
+    STOPPED("Stopped"),
 
     @Json(name = "Running")
-    running("Running");
+    RUNNING("Running");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

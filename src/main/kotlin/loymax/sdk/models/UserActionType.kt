@@ -21,55 +21,55 @@ import com.squareup.moshi.Json
 /**
  * Вид действия.
  *
- * Values: acceptTenderOffer,changePhone,questions,attachCard,showMessage,changeEmail,resetPassword,deleteCard,replaceCard,changePassword,blockCard,unblockCard,passwordRequired,assignCard,acceptSubscriptionsConfirm
+ * Values: ACCEPT_TENDER_OFFER,CHANGE_PHONE,QUESTIONS,ATTACH_CARD,SHOW_MESSAGE,CHANGE_EMAIL,RESET_PASSWORD,DELETE_CARD,REPLACE_CARD,CHANGE_PASSWORD,BLOCK_CARD,UNBLOCK_CARD,PASSWORD_REQUIRED,ASSIGN_CARD,ACCEPT_SUBSCRIPTIONS_CONFIRM
  */
 
 enum class UserActionType(val value: kotlin.String) {
 
     @Json(name = "AcceptTenderOffer")
-    acceptTenderOffer("AcceptTenderOffer"),
+    ACCEPT_TENDER_OFFER("AcceptTenderOffer"),
 
     @Json(name = "ChangePhone")
-    changePhone("ChangePhone"),
+    CHANGE_PHONE("ChangePhone"),
 
     @Json(name = "Questions")
-    questions("Questions"),
+    QUESTIONS("Questions"),
 
     @Json(name = "AttachCard")
-    attachCard("AttachCard"),
+    ATTACH_CARD("AttachCard"),
 
     @Json(name = "ShowMessage")
-    showMessage("ShowMessage"),
+    SHOW_MESSAGE("ShowMessage"),
 
     @Json(name = "ChangeEmail")
-    changeEmail("ChangeEmail"),
+    CHANGE_EMAIL("ChangeEmail"),
 
     @Json(name = "ResetPassword")
-    resetPassword("ResetPassword"),
+    RESET_PASSWORD("ResetPassword"),
 
     @Json(name = "DeleteCard")
-    deleteCard("DeleteCard"),
+    DELETE_CARD("DeleteCard"),
 
     @Json(name = "ReplaceCard")
-    replaceCard("ReplaceCard"),
+    REPLACE_CARD("ReplaceCard"),
 
     @Json(name = "ChangePassword")
-    changePassword("ChangePassword"),
+    CHANGE_PASSWORD("ChangePassword"),
 
     @Json(name = "BlockCard")
-    blockCard("BlockCard"),
+    BLOCK_CARD("BlockCard"),
 
     @Json(name = "UnblockCard")
-    unblockCard("UnblockCard"),
+    UNBLOCK_CARD("UnblockCard"),
 
     @Json(name = "PasswordRequired")
-    passwordRequired("PasswordRequired"),
+    PASSWORD_REQUIRED("PasswordRequired"),
 
     @Json(name = "AssignCard")
-    assignCard("AssignCard"),
+    ASSIGN_CARD("AssignCard"),
 
     @Json(name = "AcceptSubscriptionsConfirm")
-    acceptSubscriptionsConfirm("AcceptSubscriptionsConfirm");
+    ACCEPT_SUBSCRIPTIONS_CONFIRM("AcceptSubscriptionsConfirm");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

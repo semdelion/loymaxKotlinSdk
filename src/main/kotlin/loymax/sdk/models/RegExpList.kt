@@ -21,127 +21,127 @@ import com.squareup.moshi.Json
 /**
  * Тип регулярного выражения.
  *
- * Values: base64,guid,comment,eMail,entryPassword,nullableEntryPassword,ipAddress,ipv6Address,decimal,phone,phoneLike,nameText,descriptionText,date,dateTime,decimalQuantity,percentValue,bonusPercentValue,amountValue,sumValue,templateElementDate,emissionPrefix,emissionCount,emissionNumber,login,cardNumber,cardEmissionCount,bookletPassword,bookletNumber,cardNumberPassword,emissionRandom,integer,url,template,urlTemplate,intPack,ipPack,rsa,anyString
+ * Values: BASE64,GUID,COMMENT,E_MAIL,ENTRY_PASSWORD,NULLABLE_ENTRY_PASSWORD,IP_ADDRESS,IPV6_ADDRESS,DECIMAL,PHONE,PHONE_LIKE,NAME_TEXT,DESCRIPTION_TEXT,DATE,DATE_TIME,DECIMAL_QUANTITY,PERCENT_VALUE,BONUS_PERCENT_VALUE,AMOUNT_VALUE,SUM_VALUE,TEMPLATE_ELEMENT_DATE,EMISSION_PREFIX,EMISSION_COUNT,EMISSION_NUMBER,LOGIN,CARD_NUMBER,CARD_EMISSION_COUNT,BOOKLET_PASSWORD,BOOKLET_NUMBER,CARD_NUMBER_PASSWORD,EMISSION_RANDOM,INTEGER,URL,TEMPLATE,URL_TEMPLATE,INT_PACK,IP_PACK,RSA,ANY_STRING
  */
 
 enum class RegExpList(val value: kotlin.String) {
 
     @Json(name = "Base64")
-    base64("Base64"),
+    BASE64("Base64"),
 
     @Json(name = "Guid")
-    guid("Guid"),
+    GUID("Guid"),
 
     @Json(name = "Comment")
-    comment("Comment"),
+    COMMENT("Comment"),
 
     @Json(name = "EMail")
-    eMail("EMail"),
+    E_MAIL("EMail"),
 
     @Json(name = "EntryPassword")
-    entryPassword("EntryPassword"),
+    ENTRY_PASSWORD("EntryPassword"),
 
     @Json(name = "NullableEntryPassword")
-    nullableEntryPassword("NullableEntryPassword"),
+    NULLABLE_ENTRY_PASSWORD("NullableEntryPassword"),
 
     @Json(name = "IpAddress")
-    ipAddress("IpAddress"),
+    IP_ADDRESS("IpAddress"),
 
     @Json(name = "Ipv6Address")
-    ipv6Address("Ipv6Address"),
+    IPV6_ADDRESS("Ipv6Address"),
 
     @Json(name = "Decimal")
-    decimal("Decimal"),
+    DECIMAL("Decimal"),
 
     @Json(name = "Phone")
-    phone("Phone"),
+    PHONE("Phone"),
 
     @Json(name = "PhoneLike")
-    phoneLike("PhoneLike"),
+    PHONE_LIKE("PhoneLike"),
 
     @Json(name = "NameText")
-    nameText("NameText"),
+    NAME_TEXT("NameText"),
 
     @Json(name = "DescriptionText")
-    descriptionText("DescriptionText"),
+    DESCRIPTION_TEXT("DescriptionText"),
 
     @Json(name = "Date")
-    date("Date"),
+    DATE("Date"),
 
     @Json(name = "DateTime")
-    dateTime("DateTime"),
+    DATE_TIME("DateTime"),
 
     @Json(name = "DecimalQuantity")
-    decimalQuantity("DecimalQuantity"),
+    DECIMAL_QUANTITY("DecimalQuantity"),
 
     @Json(name = "PercentValue")
-    percentValue("PercentValue"),
+    PERCENT_VALUE("PercentValue"),
 
     @Json(name = "BonusPercentValue")
-    bonusPercentValue("BonusPercentValue"),
+    BONUS_PERCENT_VALUE("BonusPercentValue"),
 
     @Json(name = "AmountValue")
-    amountValue("AmountValue"),
+    AMOUNT_VALUE("AmountValue"),
 
     @Json(name = "SumValue")
-    sumValue("SumValue"),
+    SUM_VALUE("SumValue"),
 
     @Json(name = "TemplateElementDate")
-    templateElementDate("TemplateElementDate"),
+    TEMPLATE_ELEMENT_DATE("TemplateElementDate"),
 
     @Json(name = "EmissionPrefix")
-    emissionPrefix("EmissionPrefix"),
+    EMISSION_PREFIX("EmissionPrefix"),
 
     @Json(name = "EmissionCount")
-    emissionCount("EmissionCount"),
+    EMISSION_COUNT("EmissionCount"),
 
     @Json(name = "EmissionNumber")
-    emissionNumber("EmissionNumber"),
+    EMISSION_NUMBER("EmissionNumber"),
 
     @Json(name = "Login")
-    login("Login"),
+    LOGIN("Login"),
 
     @Json(name = "CardNumber")
-    cardNumber("CardNumber"),
+    CARD_NUMBER("CardNumber"),
 
     @Json(name = "CardEmissionCount")
-    cardEmissionCount("CardEmissionCount"),
+    CARD_EMISSION_COUNT("CardEmissionCount"),
 
     @Json(name = "BookletPassword")
-    bookletPassword("BookletPassword"),
+    BOOKLET_PASSWORD("BookletPassword"),
 
     @Json(name = "BookletNumber")
-    bookletNumber("BookletNumber"),
+    BOOKLET_NUMBER("BookletNumber"),
 
     @Json(name = "CardNumberPassword")
-    cardNumberPassword("CardNumberPassword"),
+    CARD_NUMBER_PASSWORD("CardNumberPassword"),
 
     @Json(name = "EmissionRandom")
-    emissionRandom("EmissionRandom"),
+    EMISSION_RANDOM("EmissionRandom"),
 
     @Json(name = "Integer")
-    integer("Integer"),
+    INTEGER("Integer"),
 
     @Json(name = "Url")
-    url("Url"),
+    URL("Url"),
 
     @Json(name = "Template")
-    template("Template"),
+    TEMPLATE("Template"),
 
     @Json(name = "UrlTemplate")
-    urlTemplate("UrlTemplate"),
+    URL_TEMPLATE("UrlTemplate"),
 
     @Json(name = "IntPack")
-    intPack("IntPack"),
+    INT_PACK("IntPack"),
 
     @Json(name = "IpPack")
-    ipPack("IpPack"),
+    IP_PACK("IpPack"),
 
     @Json(name = "Rsa")
-    rsa("Rsa"),
+    RSA("Rsa"),
 
     @Json(name = "AnyString")
-    anyString("AnyString");
+    ANY_STRING("AnyString");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

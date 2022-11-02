@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: normal,registered,anonymous,deleted,deregistered
+ * Values: NORMAL,REGISTERED,ANONYMOUS,DELETED,DEREGISTERED
  */
 
 enum class PersonState(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Registered")
-    registered("Registered"),
+    REGISTERED("Registered"),
 
     @Json(name = "Anonymous")
-    anonymous("Anonymous"),
+    ANONYMOUS("Anonymous"),
 
     @Json(name = "Deleted")
-    deleted("Deleted"),
+    DELETED("Deleted"),
 
     @Json(name = "Deregistered")
-    deregistered("Deregistered");
+    DEREGISTERED("Deregistered");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

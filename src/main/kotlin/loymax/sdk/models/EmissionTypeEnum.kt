@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: cardEmission,bookletEmission,couponEmission
+ * Values: CARD_EMISSION,BOOKLET_EMISSION,COUPON_EMISSION
  */
 
 enum class EmissionTypeEnum(val value: kotlin.String) {
 
     @Json(name = "CardEmission")
-    cardEmission("CardEmission"),
+    CARD_EMISSION("CardEmission"),
 
     @Json(name = "BookletEmission")
-    bookletEmission("BookletEmission"),
+    BOOKLET_EMISSION("BookletEmission"),
 
     @Json(name = "CouponEmission")
-    couponEmission("CouponEmission");
+    COUPON_EMISSION("CouponEmission");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

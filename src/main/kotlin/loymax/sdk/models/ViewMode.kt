@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Режим отображения акции (просмотр, редактирование, подтверждение).
  *
- * Values: view,edit,accept
+ * Values: VIEW,EDIT,ACCEPT
  */
 
 enum class ViewMode(val value: kotlin.String) {
 
     @Json(name = "View")
-    view("View"),
+    VIEW("View"),
 
     @Json(name = "Edit")
-    edit("Edit"),
+    EDIT("Edit"),
 
     @Json(name = "Accept")
-    accept("Accept");
+    ACCEPT("Accept");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

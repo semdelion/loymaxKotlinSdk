@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Период очищения ячейки персональных товаров.
  *
- * Values: doNotClear,day,week,month,period
+ * Values: DO_NOT_CLEAR,DAY,WEEK,MONTH,PERIOD
  */
 
 enum class PeriodClearCell(val value: kotlin.String) {
 
     @Json(name = "DoNotClear")
-    doNotClear("DoNotClear"),
+    DO_NOT_CLEAR("DoNotClear"),
 
     @Json(name = "Day")
-    day("Day"),
+    DAY("Day"),
 
     @Json(name = "Week")
-    week("Week"),
+    WEEK("Week"),
 
     @Json(name = "Month")
-    month("Month"),
+    MONTH("Month"),
 
     @Json(name = "Period")
-    period("Period");
+    PERIOD("Period");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

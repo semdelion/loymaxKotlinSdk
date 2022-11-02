@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Цель корректировки.
  *
- * Values: chequeAmount,availableAmount
+ * Values: CHEQUE_AMOUNT,AVAILABLE_AMOUNT
  */
 
 enum class PaymentCorrectionTargets(val value: kotlin.String) {
 
     @Json(name = "ChequeAmount")
-    chequeAmount("ChequeAmount"),
+    CHEQUE_AMOUNT("ChequeAmount"),
 
     @Json(name = "AvailableAmount")
-    availableAmount("AvailableAmount");
+    AVAILABLE_AMOUNT("AvailableAmount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

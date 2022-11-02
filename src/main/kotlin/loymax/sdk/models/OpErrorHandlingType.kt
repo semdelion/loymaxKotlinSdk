@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип обработчика ошибок при выполнении операции.
  *
- * Values: error,negativeBalance,zeroBalance
+ * Values: ERROR,NEGATIVE_BALANCE,ZERO_BALANCE
  */
 
 enum class OpErrorHandlingType(val value: kotlin.String) {
 
     @Json(name = "Error")
-    error("Error"),
+    ERROR("Error"),
 
     @Json(name = "NegativeBalance")
-    negativeBalance("NegativeBalance"),
+    NEGATIVE_BALANCE("NegativeBalance"),
 
     @Json(name = "ZeroBalance")
-    zeroBalance("ZeroBalance");
+    ZERO_BALANCE("ZeroBalance");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

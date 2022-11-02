@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: full,short
+ * Values: FULL,SHORT
  */
 
 enum class FilterModelType(val value: kotlin.String) {
 
     @Json(name = "Full")
-    full("Full"),
+    FULL("Full"),
 
     @Json(name = "Short")
-    short("Short");
+    SHORT("Short");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

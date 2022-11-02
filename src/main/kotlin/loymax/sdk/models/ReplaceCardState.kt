@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Статус результата.
  *
- * Values: success,cardPasswordRequired
+ * Values: SUCCESS,CARD_PASSWORD_REQUIRED
  */
 
 enum class ReplaceCardState(val value: kotlin.String) {
 
     @Json(name = "Success")
-    success("Success"),
+    SUCCESS("Success"),
 
     @Json(name = "CardPasswordRequired")
-    cardPasswordRequired("CardPasswordRequired");
+    CARD_PASSWORD_REQUIRED("CardPasswordRequired");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип получателей рассылки.
  *
- * Values: targetGroup,addressList,person
+ * Values: TARGET_GROUP,ADDRESS_LIST,PERSON
  */
 
 enum class MailingDestinationType(val value: kotlin.String) {
 
     @Json(name = "TargetGroup")
-    targetGroup("TargetGroup"),
+    TARGET_GROUP("TargetGroup"),
 
     @Json(name = "AddressList")
-    addressList("AddressList"),
+    ADDRESS_LIST("AddressList"),
 
     @Json(name = "Person")
-    person("Person");
+    PERSON("Person");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

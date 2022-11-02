@@ -21,40 +21,40 @@ import com.squareup.moshi.Json
 /**
  * Операции.
  *
- * Values: none,view,start,stop,edit,copy,delete,accept,apply,restoreFromArchive
+ * Values: NONE,VIEW,START,STOP,EDIT,COPY,DELETE,ACCEPT,APPLY,RESTORE_FROM_ARCHIVE
  */
 
 enum class Operation(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "View")
-    view("View"),
+    VIEW("View"),
 
     @Json(name = "Start")
-    start("Start"),
+    START("Start"),
 
     @Json(name = "Stop")
-    stop("Stop"),
+    STOP("Stop"),
 
     @Json(name = "Edit")
-    edit("Edit"),
+    EDIT("Edit"),
 
     @Json(name = "Copy")
-    copy("Copy"),
+    COPY("Copy"),
 
     @Json(name = "Delete")
-    delete("Delete"),
+    DELETE("Delete"),
 
     @Json(name = "Accept")
-    accept("Accept"),
+    ACCEPT("Accept"),
 
     @Json(name = "Apply")
-    apply("Apply"),
+    APPLY("Apply"),
 
     @Json(name = "RestoreFromArchive")
-    restoreFromArchive("RestoreFromArchive");
+    RESTORE_FROM_ARCHIVE("RestoreFromArchive");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

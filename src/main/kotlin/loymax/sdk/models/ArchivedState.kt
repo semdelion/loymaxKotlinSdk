@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: archived,nonArchived
+ * Values: ARCHIVED,NON_ARCHIVED
  */
 
 enum class ArchivedState(val value: kotlin.String) {
 
     @Json(name = "Archived")
-    archived("Archived"),
+    ARCHIVED("Archived"),
 
     @Json(name = "NonArchived")
-    nonArchived("NonArchived");
+    NON_ARCHIVED("NonArchived");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

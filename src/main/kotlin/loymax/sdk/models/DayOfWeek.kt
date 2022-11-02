@@ -21,31 +21,31 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: sunday,monday,tuesday,wednesday,thursday,friday,saturday
+ * Values: SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
  */
 
 enum class DayOfWeek(val value: kotlin.String) {
 
     @Json(name = "Sunday")
-    sunday("Sunday"),
+    SUNDAY("Sunday"),
 
     @Json(name = "Monday")
-    monday("Monday"),
+    MONDAY("Monday"),
 
     @Json(name = "Tuesday")
-    tuesday("Tuesday"),
+    TUESDAY("Tuesday"),
 
     @Json(name = "Wednesday")
-    wednesday("Wednesday"),
+    WEDNESDAY("Wednesday"),
 
     @Json(name = "Thursday")
-    thursday("Thursday"),
+    THURSDAY("Thursday"),
 
     @Json(name = "Friday")
-    friday("Friday"),
+    FRIDAY("Friday"),
 
     @Json(name = "Saturday")
-    saturday("Saturday");
+    SATURDAY("Saturday");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

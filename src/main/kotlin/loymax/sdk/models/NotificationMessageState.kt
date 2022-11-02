@@ -21,40 +21,40 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: readyForSend,sent,criticalError,deliveryInProcess,deliveryOk,deliveryFailed,deliveryRead,deliveryUnknown,deleted,notSent
+ * Values: READY_FOR_SEND,SENT,CRITICAL_ERROR,DELIVERY_IN_PROCESS,DELIVERY_OK,DELIVERY_FAILED,DELIVERY_READ,DELIVERY_UNKNOWN,DELETED,NOT_SENT
  */
 
 enum class NotificationMessageState(val value: kotlin.String) {
 
     @Json(name = "ReadyForSend")
-    readyForSend("ReadyForSend"),
+    READY_FOR_SEND("ReadyForSend"),
 
     @Json(name = "Sent")
-    sent("Sent"),
+    SENT("Sent"),
 
     @Json(name = "CriticalError")
-    criticalError("CriticalError"),
+    CRITICAL_ERROR("CriticalError"),
 
     @Json(name = "DeliveryInProcess")
-    deliveryInProcess("DeliveryInProcess"),
+    DELIVERY_IN_PROCESS("DeliveryInProcess"),
 
     @Json(name = "DeliveryOk")
-    deliveryOk("DeliveryOk"),
+    DELIVERY_OK("DeliveryOk"),
 
     @Json(name = "DeliveryFailed")
-    deliveryFailed("DeliveryFailed"),
+    DELIVERY_FAILED("DeliveryFailed"),
 
     @Json(name = "DeliveryRead")
-    deliveryRead("DeliveryRead"),
+    DELIVERY_READ("DeliveryRead"),
 
     @Json(name = "DeliveryUnknown")
-    deliveryUnknown("DeliveryUnknown"),
+    DELIVERY_UNKNOWN("DeliveryUnknown"),
 
     @Json(name = "Deleted")
-    deleted("Deleted"),
+    DELETED("Deleted"),
 
     @Json(name = "NotSent")
-    notSent("NotSent");
+    NOT_SENT("NotSent");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

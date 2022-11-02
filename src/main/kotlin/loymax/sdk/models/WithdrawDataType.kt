@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Тип списания.
  *
- * Values: bonus,giftCard,withdraw,giftCertificate,expiration
+ * Values: BONUS,GIFT_CARD,WITHDRAW,GIFT_CERTIFICATE,EXPIRATION
  */
 
 enum class WithdrawDataType(val value: kotlin.String) {
 
     @Json(name = "Bonus")
-    bonus("Bonus"),
+    BONUS("Bonus"),
 
     @Json(name = "GiftCard")
-    giftCard("GiftCard"),
+    GIFT_CARD("GiftCard"),
 
     @Json(name = "Withdraw")
-    withdraw("Withdraw"),
+    WITHDRAW("Withdraw"),
 
     @Json(name = "GiftCertificate")
-    giftCertificate("GiftCertificate"),
+    GIFT_CERTIFICATE("GiftCertificate"),
 
     @Json(name = "Expiration")
-    expiration("Expiration");
+    EXPIRATION("Expiration");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

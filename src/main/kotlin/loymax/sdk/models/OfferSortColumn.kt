@@ -21,34 +21,34 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: priority,name,beginTime,endTime,state,attachDate,creationDate,changeDate
+ * Values: PRIORITY,NAME,BEGIN_TIME,END_TIME,STATE,ATTACH_DATE,CREATION_DATE,CHANGE_DATE
  */
 
 enum class OfferSortColumn(val value: kotlin.String) {
 
     @Json(name = "Priority")
-    priority("Priority"),
+    PRIORITY("Priority"),
 
     @Json(name = "Name")
-    name("Name"),
+    NAME("Name"),
 
     @Json(name = "BeginTime")
-    beginTime("BeginTime"),
+    BEGIN_TIME("BeginTime"),
 
     @Json(name = "EndTime")
-    endTime("EndTime"),
+    END_TIME("EndTime"),
 
     @Json(name = "State")
-    state("State"),
+    STATE("State"),
 
     @Json(name = "AttachDate")
-    attachDate("AttachDate"),
+    ATTACH_DATE("AttachDate"),
 
     @Json(name = "CreationDate")
-    creationDate("CreationDate"),
+    CREATION_DATE("CreationDate"),
 
     @Json(name = "ChangeDate")
-    changeDate("ChangeDate");
+    CHANGE_DATE("ChangeDate");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

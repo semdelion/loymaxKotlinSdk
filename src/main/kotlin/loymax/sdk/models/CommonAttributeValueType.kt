@@ -21,31 +21,31 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: bool,string,json,date,int,double,radioString
+ * Values: BOOL,STRING,JSON,DATE,INT,DOUBLE,RADIO_STRING
  */
 
 enum class CommonAttributeValueType(val value: kotlin.String) {
 
     @Json(name = "Bool")
-    bool("Bool"),
+    BOOL("Bool"),
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "Json")
-    json("Json"),
+    JSON("Json"),
 
     @Json(name = "Date")
-    date("Date"),
+    DATE("Date"),
 
     @Json(name = "Int")
-    int("Int"),
+    INT("Int"),
 
     @Json(name = "Double")
-    double("Double"),
+    DOUBLE("Double"),
 
     @Json(name = "RadioString")
-    radioString("RadioString");
+    RADIO_STRING("RadioString");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

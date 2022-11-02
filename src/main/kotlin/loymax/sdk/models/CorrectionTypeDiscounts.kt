@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип распределения скидки между позициями.
  *
- * Values: allCheque,withoutDiscount,highPrice
+ * Values: ALL_CHEQUE,WITHOUT_DISCOUNT,HIGH_PRICE
  */
 
 enum class CorrectionTypeDiscounts(val value: kotlin.String) {
 
     @Json(name = "AllCheque")
-    allCheque("AllCheque"),
+    ALL_CHEQUE("AllCheque"),
 
     @Json(name = "WithoutDiscount")
-    withoutDiscount("WithoutDiscount"),
+    WITHOUT_DISCOUNT("WithoutDiscount"),
 
     @Json(name = "HighPrice")
-    highPrice("HighPrice");
+    HIGH_PRICE("HighPrice");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

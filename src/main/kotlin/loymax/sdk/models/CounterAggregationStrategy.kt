@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Стратегия объединения счетчика.
  *
- * Values: none,sum
+ * Values: NONE,SUM
  */
 
 enum class CounterAggregationStrategy(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "Sum")
-    sum("Sum");
+    SUM("Sum");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

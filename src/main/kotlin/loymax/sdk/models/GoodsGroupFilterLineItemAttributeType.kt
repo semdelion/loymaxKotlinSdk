@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * Тип фильтрации.
  *
- * Values: inList
+ * Values: IN_LIST
  */
 
 enum class GoodsGroupFilterLineItemAttributeType(val value: kotlin.String) {
 
     @Json(name = "InList")
-    inList("InList");
+    IN_LIST("InList");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

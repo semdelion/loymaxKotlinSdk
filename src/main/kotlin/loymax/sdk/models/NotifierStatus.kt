@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Текушее состояние нотификатора.
  *
- * Values: verified,unverified
+ * Values: VERIFIED,UNVERIFIED
  */
 
 enum class NotifierStatus(val value: kotlin.String) {
 
     @Json(name = "Verified")
-    verified("Verified"),
+    VERIFIED("Verified"),
 
     @Json(name = "Unverified")
-    unverified("Unverified");
+    UNVERIFIED("Unverified");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

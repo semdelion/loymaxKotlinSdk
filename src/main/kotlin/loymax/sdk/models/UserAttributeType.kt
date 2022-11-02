@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: notifier,question,common,personalOffer,statusSystem
+ * Values: NOTIFIER,QUESTION,COMMON,PERSONAL_OFFER,STATUS_SYSTEM
  */
 
 enum class UserAttributeType(val value: kotlin.String) {
 
     @Json(name = "Notifier")
-    notifier("Notifier"),
+    NOTIFIER("Notifier"),
 
     @Json(name = "Question")
-    question("Question"),
+    QUESTION("Question"),
 
     @Json(name = "Common")
-    common("Common"),
+    COMMON("Common"),
 
     @Json(name = "PersonalOffer")
-    personalOffer("PersonalOffer"),
+    PERSONAL_OFFER("PersonalOffer"),
 
     @Json(name = "StatusSystem")
-    statusSystem("StatusSystem");
+    STATUS_SYSTEM("StatusSystem");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

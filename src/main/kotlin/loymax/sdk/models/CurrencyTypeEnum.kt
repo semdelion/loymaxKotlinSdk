@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип валюты.
  *
- * Values: virtual,cash
+ * Values: VIRTUAL,CASH
  */
 
 enum class CurrencyTypeEnum(val value: kotlin.String) {
 
     @Json(name = "Virtual")
-    virtual("Virtual"),
+    VIRTUAL("Virtual"),
 
     @Json(name = "Cash")
-    cash("Cash");
+    CASH("Cash");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

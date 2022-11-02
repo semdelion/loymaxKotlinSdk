@@ -21,76 +21,76 @@ import com.squareup.moshi.Json
 /**
  * Переменная, значение которой будет шагом счетчика.
  *
- * Values: chequeSum,partnerDiscountSum,fullChequeSum,paymentSum,unprocessedPositionsSum,unprocessedPositionsWithoutPaymentSum,countGoods,resultChequeSum,resultChequePaymentSum,refundChequeSum,refundPaymentSum,resultRefundChequeSum,resultRefundChequePaymentSum,resultChequeDiscountSum,resultRefundChequeDiscountSum,resultChequePaymentDiscountSum,resultRefundChequePaymentDiscountSum,purchaseUsedCouponsCoupons,countFilteredGoods,countFilteredPositions,paymentAmount,cashPaymentSum
+ * Values: CHEQUE_SUM,PARTNER_DISCOUNT_SUM,FULL_CHEQUE_SUM,PAYMENT_SUM,UNPROCESSED_POSITIONS_SUM,UNPROCESSED_POSITIONS_WITHOUT_PAYMENT_SUM,COUNT_GOODS,RESULT_CHEQUE_SUM,RESULT_CHEQUE_PAYMENT_SUM,REFUND_CHEQUE_SUM,REFUND_PAYMENT_SUM,RESULT_REFUND_CHEQUE_SUM,RESULT_REFUND_CHEQUE_PAYMENT_SUM,RESULT_CHEQUE_DISCOUNT_SUM,RESULT_REFUND_CHEQUE_DISCOUNT_SUM,RESULT_CHEQUE_PAYMENT_DISCOUNT_SUM,RESULT_REFUND_CHEQUE_PAYMENT_DISCOUNT_SUM,PURCHASE_USED_COUPONS_COUPONS,COUNT_FILTERED_GOODS,COUNT_FILTERED_POSITIONS,PAYMENT_AMOUNT,CASH_PAYMENT_SUM
  */
 
 enum class OfferEventContextVariable(val value: kotlin.String) {
 
     @Json(name = "ChequeSum")
-    chequeSum("ChequeSum"),
+    CHEQUE_SUM("ChequeSum"),
 
     @Json(name = "PartnerDiscountSum")
-    partnerDiscountSum("PartnerDiscountSum"),
+    PARTNER_DISCOUNT_SUM("PartnerDiscountSum"),
 
     @Json(name = "FullChequeSum")
-    fullChequeSum("FullChequeSum"),
+    FULL_CHEQUE_SUM("FullChequeSum"),
 
     @Json(name = "PaymentSum")
-    paymentSum("PaymentSum"),
+    PAYMENT_SUM("PaymentSum"),
 
     @Json(name = "UnprocessedPositionsSum")
-    unprocessedPositionsSum("UnprocessedPositionsSum"),
+    UNPROCESSED_POSITIONS_SUM("UnprocessedPositionsSum"),
 
     @Json(name = "UnprocessedPositionsWithoutPaymentSum")
-    unprocessedPositionsWithoutPaymentSum("UnprocessedPositionsWithoutPaymentSum"),
+    UNPROCESSED_POSITIONS_WITHOUT_PAYMENT_SUM("UnprocessedPositionsWithoutPaymentSum"),
 
     @Json(name = "CountGoods")
-    countGoods("CountGoods"),
+    COUNT_GOODS("CountGoods"),
 
     @Json(name = "ResultChequeSum")
-    resultChequeSum("ResultChequeSum"),
+    RESULT_CHEQUE_SUM("ResultChequeSum"),
 
     @Json(name = "ResultChequePaymentSum")
-    resultChequePaymentSum("ResultChequePaymentSum"),
+    RESULT_CHEQUE_PAYMENT_SUM("ResultChequePaymentSum"),
 
     @Json(name = "RefundChequeSum")
-    refundChequeSum("RefundChequeSum"),
+    REFUND_CHEQUE_SUM("RefundChequeSum"),
 
     @Json(name = "RefundPaymentSum")
-    refundPaymentSum("RefundPaymentSum"),
+    REFUND_PAYMENT_SUM("RefundPaymentSum"),
 
     @Json(name = "ResultRefundChequeSum")
-    resultRefundChequeSum("ResultRefundChequeSum"),
+    RESULT_REFUND_CHEQUE_SUM("ResultRefundChequeSum"),
 
     @Json(name = "ResultRefundChequePaymentSum")
-    resultRefundChequePaymentSum("ResultRefundChequePaymentSum"),
+    RESULT_REFUND_CHEQUE_PAYMENT_SUM("ResultRefundChequePaymentSum"),
 
     @Json(name = "ResultChequeDiscountSum")
-    resultChequeDiscountSum("ResultChequeDiscountSum"),
+    RESULT_CHEQUE_DISCOUNT_SUM("ResultChequeDiscountSum"),
 
     @Json(name = "ResultRefundChequeDiscountSum")
-    resultRefundChequeDiscountSum("ResultRefundChequeDiscountSum"),
+    RESULT_REFUND_CHEQUE_DISCOUNT_SUM("ResultRefundChequeDiscountSum"),
 
     @Json(name = "ResultChequePaymentDiscountSum")
-    resultChequePaymentDiscountSum("ResultChequePaymentDiscountSum"),
+    RESULT_CHEQUE_PAYMENT_DISCOUNT_SUM("ResultChequePaymentDiscountSum"),
 
     @Json(name = "ResultRefundChequePaymentDiscountSum")
-    resultRefundChequePaymentDiscountSum("ResultRefundChequePaymentDiscountSum"),
+    RESULT_REFUND_CHEQUE_PAYMENT_DISCOUNT_SUM("ResultRefundChequePaymentDiscountSum"),
 
     @Json(name = "PurchaseUsedCouponsCoupons")
-    purchaseUsedCouponsCoupons("PurchaseUsedCouponsCoupons"),
+    PURCHASE_USED_COUPONS_COUPONS("PurchaseUsedCouponsCoupons"),
 
     @Json(name = "CountFilteredGoods")
-    countFilteredGoods("CountFilteredGoods"),
+    COUNT_FILTERED_GOODS("CountFilteredGoods"),
 
     @Json(name = "CountFilteredPositions")
-    countFilteredPositions("CountFilteredPositions"),
+    COUNT_FILTERED_POSITIONS("CountFilteredPositions"),
 
     @Json(name = "PaymentAmount")
-    paymentAmount("PaymentAmount"),
+    PAYMENT_AMOUNT("PaymentAmount"),
 
     @Json(name = "CashPaymentSum")
-    cashPaymentSum("CashPaymentSum");
+    CASH_PAYMENT_SUM("CashPaymentSum");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

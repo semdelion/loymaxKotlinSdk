@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Отрицательный баланс (Разрешение на списание бонусов при возврате покупки, даже если после этого у клиента будет отрицательный баланс. Возможные значения  SuppressNegative — запрещен, AllowNegative — разрешен).
  *
- * Values: suppressNegative,allowNegative
+ * Values: SUPPRESS_NEGATIVE,ALLOW_NEGATIVE
  */
 
 enum class RefundNegativeType(val value: kotlin.String) {
 
     @Json(name = "SuppressNegative")
-    suppressNegative("SuppressNegative"),
+    SUPPRESS_NEGATIVE("SuppressNegative"),
 
     @Json(name = "AllowNegative")
-    allowNegative("AllowNegative");
+    ALLOW_NEGATIVE("AllowNegative");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

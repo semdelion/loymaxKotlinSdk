@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Источник конфигураций.
  *
- * Values: system,notify
+ * Values: SYSTEM,NOTIFY
  */
 
 enum class ConfigurationSource(val value: kotlin.String) {
 
     @Json(name = "System")
-    system("System"),
+    SYSTEM("System"),
 
     @Json(name = "Notify")
-    notify("Notify");
+    NOTIFY("Notify");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип значения.
  *
- * Values: period,currentMonth,border
+ * Values: PERIOD,CURRENT_MONTH,BORDER
  */
 
 enum class BirthdayFilterType(val value: kotlin.String) {
 
     @Json(name = "Period")
-    period("Period"),
+    PERIOD("Period"),
 
     @Json(name = "CurrentMonth")
-    currentMonth("CurrentMonth"),
+    CURRENT_MONTH("CurrentMonth"),
 
     @Json(name = "Border")
-    border("Border");
+    BORDER("Border");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

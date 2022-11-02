@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип ограничения по времени рассылки.
  *
- * Values: noLimit,nightLimit,nightAndWeekendLimit
+ * Values: NO_LIMIT,NIGHT_LIMIT,NIGHT_AND_WEEKEND_LIMIT
  */
 
 enum class MailingTimeLimitType(val value: kotlin.String) {
 
     @Json(name = "NoLimit")
-    noLimit("NoLimit"),
+    NO_LIMIT("NoLimit"),
 
     @Json(name = "NightLimit")
-    nightLimit("NightLimit"),
+    NIGHT_LIMIT("NightLimit"),
 
     @Json(name = "NightAndWeekendLimit")
-    nightAndWeekendLimit("NightAndWeekendLimit");
+    NIGHT_AND_WEEKEND_LIMIT("NightAndWeekendLimit");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

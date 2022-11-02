@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: vKontakte,myMail,odnoklassniki,loymax,apple
+ * Values: V_KONTAKTE,MY_MAIL,ODNOKLASSNIKI,LOYMAX,APPLE
  */
 
 enum class OAuthProviderType(val value: kotlin.String) {
 
     @Json(name = "VKontakte")
-    vKontakte("VKontakte"),
+    V_KONTAKTE("VKontakte"),
 
     @Json(name = "MyMail")
-    myMail("MyMail"),
+    MY_MAIL("MyMail"),
 
     @Json(name = "Odnoklassniki")
-    odnoklassniki("Odnoklassniki"),
+    ODNOKLASSNIKI("Odnoklassniki"),
 
     @Json(name = "Loymax")
-    loymax("Loymax"),
+    LOYMAX("Loymax"),
 
     @Json(name = "Apple")
-    apple("Apple");
+    APPLE("Apple");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

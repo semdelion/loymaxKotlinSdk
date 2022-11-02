@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * ЭЦП.
  *
- * Values: none,signature
+ * Values: NONE,SIGNATURE
  */
 
 enum class RequestAuthType(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "Signature")
-    signature("Signature");
+    SIGNATURE("Signature");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

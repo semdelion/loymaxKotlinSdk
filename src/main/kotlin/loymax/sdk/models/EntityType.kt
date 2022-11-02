@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: offers,mailings,targetGroups,goodsGroups,marketingCampaigns
+ * Values: OFFERS,MAILINGS,TARGET_GROUPS,GOODS_GROUPS,MARKETING_CAMPAIGNS
  */
 
 enum class EntityType(val value: kotlin.String) {
 
     @Json(name = "Offers")
-    offers("Offers"),
+    OFFERS("Offers"),
 
     @Json(name = "Mailings")
-    mailings("Mailings"),
+    MAILINGS("Mailings"),
 
     @Json(name = "TargetGroups")
-    targetGroups("TargetGroups"),
+    TARGET_GROUPS("TargetGroups"),
 
     @Json(name = "GoodsGroups")
-    goodsGroups("GoodsGroups"),
+    GOODS_GROUPS("GoodsGroups"),
 
     @Json(name = "MarketingCampaigns")
-    marketingCampaigns("MarketingCampaigns");
+    MARKETING_CAMPAIGNS("MarketingCampaigns");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип авторизации (none — не установлен, LastFourNumbers — последние четыре цифры, PINCode — ПИН-код).
  *
- * Values: none,lastFourNumbers,pINCode
+ * Values: NONE,LAST_FOUR_NUMBERS,PIN_CODE
  */
 
 enum class DeviceOperationAuthType(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "LastFourNumbers")
-    lastFourNumbers("LastFourNumbers"),
+    LAST_FOUR_NUMBERS("LastFourNumbers"),
 
     @Json(name = "PINCode")
-    pINCode("PINCode");
+    PIN_CODE("PINCode");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

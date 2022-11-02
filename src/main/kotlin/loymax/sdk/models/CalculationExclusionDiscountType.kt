@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: discount,paymentLoymaxBonus,paymentExternalBonus
+ * Values: DISCOUNT,PAYMENT_LOYMAX_BONUS,PAYMENT_EXTERNAL_BONUS
  */
 
 enum class CalculationExclusionDiscountType(val value: kotlin.String) {
 
     @Json(name = "Discount")
-    discount("Discount"),
+    DISCOUNT("Discount"),
 
     @Json(name = "PaymentLoymaxBonus")
-    paymentLoymaxBonus("PaymentLoymaxBonus"),
+    PAYMENT_LOYMAX_BONUS("PaymentLoymaxBonus"),
 
     @Json(name = "PaymentExternalBonus")
-    paymentExternalBonus("PaymentExternalBonus");
+    PAYMENT_EXTERNAL_BONUS("PaymentExternalBonus");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

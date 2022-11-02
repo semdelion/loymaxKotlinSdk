@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Состояние изменений в акции.
  *
- * Values: editing,onApproval,approved
+ * Values: EDITING,ON_APPROVAL,APPROVED
  */
 
 enum class OfferChangesState(val value: kotlin.String) {
 
     @Json(name = "Editing")
-    editing("Editing"),
+    EDITING("Editing"),
 
     @Json(name = "OnApproval")
-    onApproval("OnApproval"),
+    ON_APPROVAL("OnApproval"),
 
     @Json(name = "Approved")
-    approved("Approved");
+    APPROVED("Approved");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

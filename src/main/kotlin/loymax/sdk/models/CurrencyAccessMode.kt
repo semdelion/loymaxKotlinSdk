@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Режим доступа к валюте.
  *
- * Values: view,edit
+ * Values: VIEW,EDIT
  */
 
 enum class CurrencyAccessMode(val value: kotlin.String) {
 
     @Json(name = "View")
-    view("View"),
+    VIEW("View"),
 
     @Json(name = "Edit")
-    edit("Edit");
+    EDIT("Edit");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

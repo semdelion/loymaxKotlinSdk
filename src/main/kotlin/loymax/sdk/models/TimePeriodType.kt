@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: month
+ * Values: MONTH
  */
 
 enum class TimePeriodType(val value: kotlin.String) {
 
     @Json(name = "Month")
-    month("Month");
+    MONTH("Month");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

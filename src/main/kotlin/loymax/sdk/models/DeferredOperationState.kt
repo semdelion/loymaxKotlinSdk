@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: created,completed,error
+ * Values: CREATED,COMPLETED,ERROR
  */
 
 enum class DeferredOperationState(val value: kotlin.String) {
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "Completed")
-    completed("Completed"),
+    COMPLETED("Completed"),
 
     @Json(name = "Error")
-    error("Error");
+    ERROR("Error");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

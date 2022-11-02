@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: oAuth1,oAuth2
+ * Values: O_AUTH1,O_AUTH2
  */
 
 enum class OAuthProtocolType(val value: kotlin.String) {
 
     @Json(name = "OAuth1")
-    oAuth1("OAuth1"),
+    O_AUTH1("OAuth1"),
 
     @Json(name = "OAuth2")
-    oAuth2("OAuth2");
+    O_AUTH2("OAuth2");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

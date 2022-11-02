@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Тип.
  *
- * Values: question,questionGroup,questionFixedAnswer,questionMultipleGroup,answers
+ * Values: QUESTION,QUESTION_GROUP,QUESTION_FIXED_ANSWER,QUESTION_MULTIPLE_GROUP,ANSWERS
  */
 
 enum class QuestionnaireItemModelType(val value: kotlin.String) {
 
     @Json(name = "Question")
-    question("Question"),
+    QUESTION("Question"),
 
     @Json(name = "QuestionGroup")
-    questionGroup("QuestionGroup"),
+    QUESTION_GROUP("QuestionGroup"),
 
     @Json(name = "QuestionFixedAnswer")
-    questionFixedAnswer("QuestionFixedAnswer"),
+    QUESTION_FIXED_ANSWER("QuestionFixedAnswer"),
 
     @Json(name = "QuestionMultipleGroup")
-    questionMultipleGroup("QuestionMultipleGroup"),
+    QUESTION_MULTIPLE_GROUP("QuestionMultipleGroup"),
 
     @Json(name = "Answers")
-    answers("Answers");
+    ANSWERS("Answers");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: active,commingSoon
+ * Values: ACTIVE,COMMING_SOON
  */
 
 enum class CommunicationOfferState(val value: kotlin.String) {
 
     @Json(name = "Active")
-    active("Active"),
+    ACTIVE("Active"),
 
     @Json(name = "CommingSoon")
-    commingSoon("CommingSoon");
+    COMMING_SOON("CommingSoon");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

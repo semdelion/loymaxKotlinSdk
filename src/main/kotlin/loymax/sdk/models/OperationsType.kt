@@ -21,46 +21,46 @@ import com.squareup.moshi.Json
 /**
  * Тип операции.
  *
- * Values: paymentOperation,depositOperation,cashbackOperation,refundCashbackOperation,refundPaymentOperation,chargingOperation,directDiscountOperation,withdrawOperation,giftCardPaymentOperation,refundGiftCardPaymentOperation,giftCertificatePaymentOperation,refundGiftCertificatePaymentOperation
+ * Values: PAYMENT_OPERATION,DEPOSIT_OPERATION,CASHBACK_OPERATION,REFUND_CASHBACK_OPERATION,REFUND_PAYMENT_OPERATION,CHARGING_OPERATION,DIRECT_DISCOUNT_OPERATION,WITHDRAW_OPERATION,GIFT_CARD_PAYMENT_OPERATION,REFUND_GIFT_CARD_PAYMENT_OPERATION,GIFT_CERTIFICATE_PAYMENT_OPERATION,REFUND_GIFT_CERTIFICATE_PAYMENT_OPERATION
  */
 
 enum class OperationsType(val value: kotlin.String) {
 
     @Json(name = "PaymentOperation")
-    paymentOperation("PaymentOperation"),
+    PAYMENT_OPERATION("PaymentOperation"),
 
     @Json(name = "DepositOperation")
-    depositOperation("DepositOperation"),
+    DEPOSIT_OPERATION("DepositOperation"),
 
     @Json(name = "CashbackOperation")
-    cashbackOperation("CashbackOperation"),
+    CASHBACK_OPERATION("CashbackOperation"),
 
     @Json(name = "RefundCashbackOperation")
-    refundCashbackOperation("RefundCashbackOperation"),
+    REFUND_CASHBACK_OPERATION("RefundCashbackOperation"),
 
     @Json(name = "RefundPaymentOperation")
-    refundPaymentOperation("RefundPaymentOperation"),
+    REFUND_PAYMENT_OPERATION("RefundPaymentOperation"),
 
     @Json(name = "ChargingOperation")
-    chargingOperation("ChargingOperation"),
+    CHARGING_OPERATION("ChargingOperation"),
 
     @Json(name = "DirectDiscountOperation")
-    directDiscountOperation("DirectDiscountOperation"),
+    DIRECT_DISCOUNT_OPERATION("DirectDiscountOperation"),
 
     @Json(name = "WithdrawOperation")
-    withdrawOperation("WithdrawOperation"),
+    WITHDRAW_OPERATION("WithdrawOperation"),
 
     @Json(name = "GiftCardPaymentOperation")
-    giftCardPaymentOperation("GiftCardPaymentOperation"),
+    GIFT_CARD_PAYMENT_OPERATION("GiftCardPaymentOperation"),
 
     @Json(name = "RefundGiftCardPaymentOperation")
-    refundGiftCardPaymentOperation("RefundGiftCardPaymentOperation"),
+    REFUND_GIFT_CARD_PAYMENT_OPERATION("RefundGiftCardPaymentOperation"),
 
     @Json(name = "GiftCertificatePaymentOperation")
-    giftCertificatePaymentOperation("GiftCertificatePaymentOperation"),
+    GIFT_CERTIFICATE_PAYMENT_OPERATION("GiftCertificatePaymentOperation"),
 
     @Json(name = "RefundGiftCertificatePaymentOperation")
-    refundGiftCertificatePaymentOperation("RefundGiftCertificatePaymentOperation");
+    REFUND_GIFT_CERTIFICATE_PAYMENT_OPERATION("RefundGiftCertificatePaymentOperation");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

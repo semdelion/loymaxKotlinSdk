@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Код результата.
  *
- * Values: success,invalidLoginPassword,passwordRequired,registrationBlocked,registrationAlreadyCompleted
+ * Values: SUCCESS,INVALID_LOGIN_PASSWORD,PASSWORD_REQUIRED,REGISTRATION_BLOCKED,REGISTRATION_ALREADY_COMPLETED
  */
 
 enum class RegistrationState(val value: kotlin.String) {
 
     @Json(name = "Success")
-    success("Success"),
+    SUCCESS("Success"),
 
     @Json(name = "InvalidLoginPassword")
-    invalidLoginPassword("InvalidLoginPassword"),
+    INVALID_LOGIN_PASSWORD("InvalidLoginPassword"),
 
     @Json(name = "PasswordRequired")
-    passwordRequired("PasswordRequired"),
+    PASSWORD_REQUIRED("PasswordRequired"),
 
     @Json(name = "RegistrationBlocked")
-    registrationBlocked("RegistrationBlocked"),
+    REGISTRATION_BLOCKED("RegistrationBlocked"),
 
     @Json(name = "RegistrationAlreadyCompleted")
-    registrationAlreadyCompleted("RegistrationAlreadyCompleted");
+    REGISTRATION_ALREADY_COMPLETED("RegistrationAlreadyCompleted");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

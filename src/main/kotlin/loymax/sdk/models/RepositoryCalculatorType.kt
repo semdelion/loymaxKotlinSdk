@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: filterPurchases,partnerPurchaseAmount,decimalQuestion,countGoodsByOfferChain
+ * Values: FILTER_PURCHASES,PARTNER_PURCHASE_AMOUNT,DECIMAL_QUESTION,COUNT_GOODS_BY_OFFER_CHAIN
  */
 
 enum class RepositoryCalculatorType(val value: kotlin.String) {
 
     @Json(name = "FilterPurchases")
-    filterPurchases("FilterPurchases"),
+    FILTER_PURCHASES("FilterPurchases"),
 
     @Json(name = "PartnerPurchaseAmount")
-    partnerPurchaseAmount("PartnerPurchaseAmount"),
+    PARTNER_PURCHASE_AMOUNT("PartnerPurchaseAmount"),
 
     @Json(name = "DecimalQuestion")
-    decimalQuestion("DecimalQuestion"),
+    DECIMAL_QUESTION("DecimalQuestion"),
 
     @Json(name = "CountGoodsByOfferChain")
-    countGoodsByOfferChain("CountGoodsByOfferChain");
+    COUNT_GOODS_BY_OFFER_CHAIN("CountGoodsByOfferChain");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

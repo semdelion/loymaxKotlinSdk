@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: regular,gift
+ * Values: REGULAR,GIFT
  */
 
 enum class CardCategoryType(val value: kotlin.String) {
 
     @Json(name = "Regular")
-    regular("Regular"),
+    REGULAR("Regular"),
 
     @Json(name = "Gift")
-    gift("Gift");
+    GIFT("Gift");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Состояние отметки.
  *
- * Values: unchecked,indeterminate,checked
+ * Values: UNCHECKED,INDETERMINATE,CHECKED
  */
 
 enum class CheckState(val value: kotlin.String) {
 
     @Json(name = "Unchecked")
-    unchecked("Unchecked"),
+    UNCHECKED("Unchecked"),
 
     @Json(name = "Indeterminate")
-    indeterminate("Indeterminate"),
+    INDETERMINATE("Indeterminate"),
 
     @Json(name = "Checked")
-    checked("Checked");
+    CHECKED("Checked");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

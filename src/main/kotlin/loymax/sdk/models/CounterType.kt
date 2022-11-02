@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: original,purchaseCounter,multiplicityCounter
+ * Values: ORIGINAL,PURCHASE_COUNTER,MULTIPLICITY_COUNTER
  */
 
 enum class CounterType(val value: kotlin.String) {
 
     @Json(name = "Original")
-    original("Original"),
+    ORIGINAL("Original"),
 
     @Json(name = "PurchaseCounter")
-    purchaseCounter("PurchaseCounter"),
+    PURCHASE_COUNTER("PurchaseCounter"),
 
     @Json(name = "MultiplicityCounter")
-    multiplicityCounter("MultiplicityCounter");
+    MULTIPLICITY_COUNTER("MultiplicityCounter");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

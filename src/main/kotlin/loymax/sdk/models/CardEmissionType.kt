@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: generated,uploaded,uploadTask
+ * Values: GENERATED,UPLOADED,UPLOAD_TASK
  */
 
 enum class CardEmissionType(val value: kotlin.String) {
 
     @Json(name = "Generated")
-    generated("Generated"),
+    GENERATED("Generated"),
 
     @Json(name = "Uploaded")
-    uploaded("Uploaded"),
+    UPLOADED("Uploaded"),
 
     @Json(name = "UploadTask")
-    uploadTask("UploadTask");
+    UPLOAD_TASK("UploadTask");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

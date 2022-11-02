@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: name,itemId
+ * Values: NAME,ITEM_ID
  */
 
 enum class GoodsCatalogSortParameter(val value: kotlin.String) {
 
     @Json(name = "Name")
-    name("Name"),
+    NAME("Name"),
 
     @Json(name = "ItemId")
-    itemId("ItemId");
+    ITEM_ID("ItemId");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

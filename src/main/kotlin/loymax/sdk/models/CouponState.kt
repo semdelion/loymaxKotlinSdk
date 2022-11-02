@@ -21,31 +21,31 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: created,issued,used,rejected,queuedToUse,queuedToIssue,expired
+ * Values: CREATED,ISSUED,USED,REJECTED,QUEUED_TO_USE,QUEUED_TO_ISSUE,EXPIRED
  */
 
 enum class CouponState(val value: kotlin.String) {
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "Issued")
-    issued("Issued"),
+    ISSUED("Issued"),
 
     @Json(name = "Used")
-    used("Used"),
+    USED("Used"),
 
     @Json(name = "Rejected")
-    rejected("Rejected"),
+    REJECTED("Rejected"),
 
     @Json(name = "QueuedToUse")
-    queuedToUse("QueuedToUse"),
+    QUEUED_TO_USE("QueuedToUse"),
 
     @Json(name = "QueuedToIssue")
-    queuedToIssue("QueuedToIssue"),
+    QUEUED_TO_ISSUE("QueuedToIssue"),
 
     @Json(name = "Expired")
-    expired("Expired");
+    EXPIRED("Expired");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

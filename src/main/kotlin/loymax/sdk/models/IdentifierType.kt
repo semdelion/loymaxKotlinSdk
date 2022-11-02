@@ -21,88 +21,88 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: cardNumber,login,cardBarCode,cardTrack1,cardTrack2,cardTrack3,uID,`data`,anonymous,phone,email,oAuth,oAuthApplication,coupon,partnerCoupon,phoneHash,appleWalletCard,gpayWalletCard,qrCode,personUID,giftCertificateNumber,giftCertificateBarcode,giftCertificateTrack1,giftCertificateTrack2,giftCertificateTrack3,giftCertificateQrCode
+ * Values: CARD_NUMBER,LOGIN,CARD_BAR_CODE,CARD_TRACK1,CARD_TRACK2,CARD_TRACK3,UID,DATA,ANONYMOUS,PHONE,EMAIL,O_AUTH,O_AUTH_APPLICATION,COUPON,PARTNER_COUPON,PHONE_HASH,APPLE_WALLET_CARD,GPAY_WALLET_CARD,QR_CODE,PERSON_UID,GIFT_CERTIFICATE_NUMBER,GIFT_CERTIFICATE_BARCODE,GIFT_CERTIFICATE_TRACK1,GIFT_CERTIFICATE_TRACK2,GIFT_CERTIFICATE_TRACK3,GIFT_CERTIFICATE_QR_CODE
  */
 
 enum class IdentifierType(val value: kotlin.String) {
 
     @Json(name = "CardNumber")
-    cardNumber("CardNumber"),
+    CARD_NUMBER("CardNumber"),
 
     @Json(name = "Login")
-    login("Login"),
+    LOGIN("Login"),
 
     @Json(name = "CardBarCode")
-    cardBarCode("CardBarCode"),
+    CARD_BAR_CODE("CardBarCode"),
 
     @Json(name = "CardTrack1")
-    cardTrack1("CardTrack1"),
+    CARD_TRACK1("CardTrack1"),
 
     @Json(name = "CardTrack2")
-    cardTrack2("CardTrack2"),
+    CARD_TRACK2("CardTrack2"),
 
     @Json(name = "CardTrack3")
-    cardTrack3("CardTrack3"),
+    CARD_TRACK3("CardTrack3"),
 
     @Json(name = "UID")
-    uID("UID"),
+    UID("UID"),
 
     @Json(name = "Data")
-    `data`("Data"),
+    DATA("Data"),
 
     @Json(name = "Anonymous")
-    anonymous("Anonymous"),
+    ANONYMOUS("Anonymous"),
 
     @Json(name = "Phone")
-    phone("Phone"),
+    PHONE("Phone"),
 
     @Json(name = "Email")
-    email("Email"),
+    EMAIL("Email"),
 
     @Json(name = "OAuth")
-    oAuth("OAuth"),
+    O_AUTH("OAuth"),
 
     @Json(name = "OAuthApplication")
-    oAuthApplication("OAuthApplication"),
+    O_AUTH_APPLICATION("OAuthApplication"),
 
     @Json(name = "Coupon")
-    coupon("Coupon"),
+    COUPON("Coupon"),
 
     @Json(name = "PartnerCoupon")
-    partnerCoupon("PartnerCoupon"),
+    PARTNER_COUPON("PartnerCoupon"),
 
     @Json(name = "PhoneHash")
-    phoneHash("PhoneHash"),
+    PHONE_HASH("PhoneHash"),
 
     @Json(name = "AppleWalletCard")
-    appleWalletCard("AppleWalletCard"),
+    APPLE_WALLET_CARD("AppleWalletCard"),
 
     @Json(name = "GpayWalletCard")
-    gpayWalletCard("GpayWalletCard"),
+    GPAY_WALLET_CARD("GpayWalletCard"),
 
     @Json(name = "QrCode")
-    qrCode("QrCode"),
+    QR_CODE("QrCode"),
 
     @Json(name = "PersonUID")
-    personUID("PersonUID"),
+    PERSON_UID("PersonUID"),
 
     @Json(name = "GiftCertificateNumber")
-    giftCertificateNumber("GiftCertificateNumber"),
+    GIFT_CERTIFICATE_NUMBER("GiftCertificateNumber"),
 
     @Json(name = "GiftCertificateBarcode")
-    giftCertificateBarcode("GiftCertificateBarcode"),
+    GIFT_CERTIFICATE_BARCODE("GiftCertificateBarcode"),
 
     @Json(name = "GiftCertificateTrack1")
-    giftCertificateTrack1("GiftCertificateTrack1"),
+    GIFT_CERTIFICATE_TRACK1("GiftCertificateTrack1"),
 
     @Json(name = "GiftCertificateTrack2")
-    giftCertificateTrack2("GiftCertificateTrack2"),
+    GIFT_CERTIFICATE_TRACK2("GiftCertificateTrack2"),
 
     @Json(name = "GiftCertificateTrack3")
-    giftCertificateTrack3("GiftCertificateTrack3"),
+    GIFT_CERTIFICATE_TRACK3("GiftCertificateTrack3"),
 
     @Json(name = "GiftCertificateQrCode")
-    giftCertificateQrCode("GiftCertificateQrCode");
+    GIFT_CERTIFICATE_QR_CODE("GiftCertificateQrCode");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

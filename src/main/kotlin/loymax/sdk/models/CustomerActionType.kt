@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: site,sms,`operator`,mobileApplication,`import`,paper
+ * Values: SITE,SMS,OPERATOR,MOBILE_APPLICATION,IMPORT,PAPER
  */
 
 enum class CustomerActionType(val value: kotlin.String) {
 
     @Json(name = "Site")
-    site("Site"),
+    SITE("Site"),
 
     @Json(name = "Sms")
-    sms("Sms"),
+    SMS("Sms"),
 
     @Json(name = "Operator")
-    `operator`("Operator"),
+    OPERATOR("Operator"),
 
     @Json(name = "MobileApplication")
-    mobileApplication("MobileApplication"),
+    MOBILE_APPLICATION("MobileApplication"),
 
     @Json(name = "Import")
-    `import`("Import"),
+    IMPORT("Import"),
 
     @Json(name = "Paper")
-    paper("Paper");
+    PAPER("Paper");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

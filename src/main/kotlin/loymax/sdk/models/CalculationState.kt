@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: toCalculate,inProcess,calculated,error
+ * Values: TO_CALCULATE,IN_PROCESS,CALCULATED,ERROR
  */
 
 enum class CalculationState(val value: kotlin.String) {
 
     @Json(name = "ToCalculate")
-    toCalculate("ToCalculate"),
+    TO_CALCULATE("ToCalculate"),
 
     @Json(name = "InProcess")
-    inProcess("InProcess"),
+    IN_PROCESS("InProcess"),
 
     @Json(name = "Calculated")
-    calculated("Calculated"),
+    CALCULATED("Calculated"),
 
     @Json(name = "Error")
-    error("Error");
+    ERROR("Error");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

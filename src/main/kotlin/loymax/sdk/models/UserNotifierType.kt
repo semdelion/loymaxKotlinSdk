@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип уведомления.
  *
- * Values: phone,email,push
+ * Values: PHONE,EMAIL,PUSH
  */
 
 enum class UserNotifierType(val value: kotlin.String) {
 
     @Json(name = "Phone")
-    phone("Phone"),
+    PHONE("Phone"),
 
     @Json(name = "Email")
-    email("Email"),
+    EMAIL("Email"),
 
     @Json(name = "Push")
-    push("Push");
+    PUSH("Push");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: selectByLogicalName,ignoreByLogicalName,selectUncategorized
+ * Values: SELECT_BY_LOGICAL_NAME,IGNORE_BY_LOGICAL_NAME,SELECT_UNCATEGORIZED
  */
 
 enum class OfferCategoryFilterType(val value: kotlin.String) {
 
     @Json(name = "SelectByLogicalName")
-    selectByLogicalName("SelectByLogicalName"),
+    SELECT_BY_LOGICAL_NAME("SelectByLogicalName"),
 
     @Json(name = "IgnoreByLogicalName")
-    ignoreByLogicalName("IgnoreByLogicalName"),
+    IGNORE_BY_LOGICAL_NAME("IgnoreByLogicalName"),
 
     @Json(name = "SelectUncategorized")
-    selectUncategorized("SelectUncategorized");
+    SELECT_UNCATEGORIZED("SelectUncategorized");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

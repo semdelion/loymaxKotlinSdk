@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: all,purchase,rewardData,withdrawData
+ * Values: ALL,PURCHASE,REWARD_DATA,WITHDRAW_DATA
  */
 
 enum class HistoryItemType(val value: kotlin.String) {
 
     @Json(name = "All")
-    all("All"),
+    ALL("All"),
 
     @Json(name = "Purchase")
-    purchase("Purchase"),
+    PURCHASE("Purchase"),
 
     @Json(name = "RewardData")
-    rewardData("RewardData"),
+    REWARD_DATA("RewardData"),
 
     @Json(name = "WithdrawData")
-    withdrawData("WithdrawData");
+    WITHDRAW_DATA("WithdrawData");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

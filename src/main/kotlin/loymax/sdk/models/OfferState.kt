@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: run,stop,archived
+ * Values: RUN,STOP,ARCHIVED
  */
 
 enum class OfferState(val value: kotlin.String) {
 
     @Json(name = "Run")
-    run("Run"),
+    RUN("Run"),
 
     @Json(name = "Stop")
-    stop("Stop"),
+    STOP("Stop"),
 
     @Json(name = "Archived")
-    archived("Archived");
+    ARCHIVED("Archived");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

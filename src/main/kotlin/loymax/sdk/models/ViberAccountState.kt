@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: exist,noExist,unknown
+ * Values: EXIST,NO_EXIST,UNKNOWN
  */
 
 enum class ViberAccountState(val value: kotlin.String) {
 
     @Json(name = "Exist")
-    exist("Exist"),
+    EXIST("Exist"),
 
     @Json(name = "NoExist")
-    noExist("NoExist"),
+    NO_EXIST("NoExist"),
 
     @Json(name = "Unknown")
-    unknown("Unknown");
+    UNKNOWN("Unknown");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

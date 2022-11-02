@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Состояния версии как черновика              None = 0, версия не является черновиком (уже была подтверждена)              Edit = 1, версия является редактируемым в данный момент черновиком              Applied = 2, версия является черновиком, требующим подтверждения или отклонения (вносить изменения нельзя)              Rejected = 3,  версия является редактируемым в данный момент черновиком, отклоненным на этапе подтверждения.
  *
- * Values: none,edit,applied,rejected
+ * Values: NONE,EDIT,APPLIED,REJECTED
  */
 
 enum class OfferDraftState(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "Edit")
-    edit("Edit"),
+    EDIT("Edit"),
 
     @Json(name = "Applied")
-    applied("Applied"),
+    APPLIED("Applied"),
 
     @Json(name = "Rejected")
-    rejected("Rejected");
+    REJECTED("Rejected");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

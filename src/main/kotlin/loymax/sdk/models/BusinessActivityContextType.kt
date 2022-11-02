@@ -21,88 +21,88 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: unknown,deviceRequest,showcasePurchase,userDateTimeEvent,bonusLifeTimeEvent,changeNotifier,registrationEnd,linkCard,changeCardState,smsRegistration,questionnaireUpdate,externalCardReplace,pushDeviceRegistration,sendPasswordToCheque,purchaseOperation,socialNetworkAction,manualPayOperation,referralActivity,userDeregistration,personStatusChange,giftCertificateOperation,statusSystemCalculation,customerBeginRegistration,batchClientImport,customerRegistration,linkAccount
+ * Values: UNKNOWN,DEVICE_REQUEST,SHOWCASE_PURCHASE,USER_DATE_TIME_EVENT,BONUS_LIFE_TIME_EVENT,CHANGE_NOTIFIER,REGISTRATION_END,LINK_CARD,CHANGE_CARD_STATE,SMS_REGISTRATION,QUESTIONNAIRE_UPDATE,EXTERNAL_CARD_REPLACE,PUSH_DEVICE_REGISTRATION,SEND_PASSWORD_TO_CHEQUE,PURCHASE_OPERATION,SOCIAL_NETWORK_ACTION,MANUAL_PAY_OPERATION,REFERRAL_ACTIVITY,USER_DEREGISTRATION,PERSON_STATUS_CHANGE,GIFT_CERTIFICATE_OPERATION,STATUS_SYSTEM_CALCULATION,CUSTOMER_BEGIN_REGISTRATION,BATCH_CLIENT_IMPORT,CUSTOMER_REGISTRATION,LINK_ACCOUNT
  */
 
 enum class BusinessActivityContextType(val value: kotlin.String) {
 
     @Json(name = "Unknown")
-    unknown("Unknown"),
+    UNKNOWN("Unknown"),
 
     @Json(name = "DeviceRequest")
-    deviceRequest("DeviceRequest"),
+    DEVICE_REQUEST("DeviceRequest"),
 
     @Json(name = "ShowcasePurchase")
-    showcasePurchase("ShowcasePurchase"),
+    SHOWCASE_PURCHASE("ShowcasePurchase"),
 
     @Json(name = "UserDateTimeEvent")
-    userDateTimeEvent("UserDateTimeEvent"),
+    USER_DATE_TIME_EVENT("UserDateTimeEvent"),
 
     @Json(name = "BonusLifeTimeEvent")
-    bonusLifeTimeEvent("BonusLifeTimeEvent"),
+    BONUS_LIFE_TIME_EVENT("BonusLifeTimeEvent"),
 
     @Json(name = "ChangeNotifier")
-    changeNotifier("ChangeNotifier"),
+    CHANGE_NOTIFIER("ChangeNotifier"),
 
     @Json(name = "RegistrationEnd")
-    registrationEnd("RegistrationEnd"),
+    REGISTRATION_END("RegistrationEnd"),
 
     @Json(name = "LinkCard")
-    linkCard("LinkCard"),
+    LINK_CARD("LinkCard"),
 
     @Json(name = "ChangeCardState")
-    changeCardState("ChangeCardState"),
+    CHANGE_CARD_STATE("ChangeCardState"),
 
     @Json(name = "SmsRegistration")
-    smsRegistration("SmsRegistration"),
+    SMS_REGISTRATION("SmsRegistration"),
 
     @Json(name = "QuestionnaireUpdate")
-    questionnaireUpdate("QuestionnaireUpdate"),
+    QUESTIONNAIRE_UPDATE("QuestionnaireUpdate"),
 
     @Json(name = "ExternalCardReplace")
-    externalCardReplace("ExternalCardReplace"),
+    EXTERNAL_CARD_REPLACE("ExternalCardReplace"),
 
     @Json(name = "PushDeviceRegistration")
-    pushDeviceRegistration("PushDeviceRegistration"),
+    PUSH_DEVICE_REGISTRATION("PushDeviceRegistration"),
 
     @Json(name = "SendPasswordToCheque")
-    sendPasswordToCheque("SendPasswordToCheque"),
+    SEND_PASSWORD_TO_CHEQUE("SendPasswordToCheque"),
 
     @Json(name = "PurchaseOperation")
-    purchaseOperation("PurchaseOperation"),
+    PURCHASE_OPERATION("PurchaseOperation"),
 
     @Json(name = "SocialNetworkAction")
-    socialNetworkAction("SocialNetworkAction"),
+    SOCIAL_NETWORK_ACTION("SocialNetworkAction"),
 
     @Json(name = "ManualPayOperation")
-    manualPayOperation("ManualPayOperation"),
+    MANUAL_PAY_OPERATION("ManualPayOperation"),
 
     @Json(name = "ReferralActivity")
-    referralActivity("ReferralActivity"),
+    REFERRAL_ACTIVITY("ReferralActivity"),
 
     @Json(name = "UserDeregistration")
-    userDeregistration("UserDeregistration"),
+    USER_DEREGISTRATION("UserDeregistration"),
 
     @Json(name = "PersonStatusChange")
-    personStatusChange("PersonStatusChange"),
+    PERSON_STATUS_CHANGE("PersonStatusChange"),
 
     @Json(name = "GiftCertificateOperation")
-    giftCertificateOperation("GiftCertificateOperation"),
+    GIFT_CERTIFICATE_OPERATION("GiftCertificateOperation"),
 
     @Json(name = "StatusSystemCalculation")
-    statusSystemCalculation("StatusSystemCalculation"),
+    STATUS_SYSTEM_CALCULATION("StatusSystemCalculation"),
 
     @Json(name = "CustomerBeginRegistration")
-    customerBeginRegistration("CustomerBeginRegistration"),
+    CUSTOMER_BEGIN_REGISTRATION("CustomerBeginRegistration"),
 
     @Json(name = "BatchClientImport")
-    batchClientImport("BatchClientImport"),
+    BATCH_CLIENT_IMPORT("BatchClientImport"),
 
     @Json(name = "CustomerRegistration")
-    customerRegistration("CustomerRegistration"),
+    CUSTOMER_REGISTRATION("CustomerRegistration"),
 
     @Json(name = "LinkAccount")
-    linkAccount("LinkAccount");
+    LINK_ACCOUNT("LinkAccount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

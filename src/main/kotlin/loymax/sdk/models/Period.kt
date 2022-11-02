@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип периода.
  *
- * Values: fromWeekToMonth,fromMonthToYear,fromYear
+ * Values: FROM_WEEK_TO_MONTH,FROM_MONTH_TO_YEAR,FROM_YEAR
  */
 
 enum class Period(val value: kotlin.String) {
 
     @Json(name = "FromWeekToMonth")
-    fromWeekToMonth("FromWeekToMonth"),
+    FROM_WEEK_TO_MONTH("FromWeekToMonth"),
 
     @Json(name = "FromMonthToYear")
-    fromMonthToYear("FromMonthToYear"),
+    FROM_MONTH_TO_YEAR("FromMonthToYear"),
 
     @Json(name = "FromYear")
-    fromYear("FromYear");
+    FROM_YEAR("FromYear");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

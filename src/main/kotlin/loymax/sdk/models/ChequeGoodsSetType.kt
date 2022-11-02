@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Поле, по значениям которого будет формироваться набор.
  *
- * Values: quantity,amount
+ * Values: QUANTITY,AMOUNT
  */
 
 enum class ChequeGoodsSetType(val value: kotlin.String) {
 
     @Json(name = "Quantity")
-    quantity("Quantity"),
+    QUANTITY("Quantity"),
 
     @Json(name = "Amount")
-    amount("Amount");
+    AMOUNT("Amount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

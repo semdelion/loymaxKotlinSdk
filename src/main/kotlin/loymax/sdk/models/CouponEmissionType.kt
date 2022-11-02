@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: `public`,person,distributed
+ * Values: PUBLIC,PERSON,DISTRIBUTED
  */
 
 enum class CouponEmissionType(val value: kotlin.String) {
 
     @Json(name = "Public")
-    `public`("Public"),
+    PUBLIC("Public"),
 
     @Json(name = "Person")
-    person("Person"),
+    PERSON("Person"),
 
     @Json(name = "Distributed")
-    distributed("Distributed");
+    DISTRIBUTED("Distributed");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

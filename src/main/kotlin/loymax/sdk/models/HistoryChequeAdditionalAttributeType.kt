@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * The {Loymax.History.Mobile.Contract.HistoryChequeAdditionalAttributeModel}.
  *
- * Values: string,decimal
+ * Values: STRING,DECIMAL
  */
 
 enum class HistoryChequeAdditionalAttributeType(val value: kotlin.String) {
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "Decimal")
-    decimal("Decimal");
+    DECIMAL("Decimal");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

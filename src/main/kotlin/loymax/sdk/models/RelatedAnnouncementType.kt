@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: offer
+ * Values: OFFER
  */
 
 enum class RelatedAnnouncementType(val value: kotlin.String) {
 
     @Json(name = "Offer")
-    offer("Offer");
+    OFFER("Offer");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

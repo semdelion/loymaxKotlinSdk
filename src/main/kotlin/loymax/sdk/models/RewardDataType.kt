@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Тип вознаграждения.
  *
- * Values: bonus,discount,gift,charging,activation
+ * Values: BONUS,DISCOUNT,GIFT,CHARGING,ACTIVATION
  */
 
 enum class RewardDataType(val value: kotlin.String) {
 
     @Json(name = "Bonus")
-    bonus("Bonus"),
+    BONUS("Bonus"),
 
     @Json(name = "Discount")
-    discount("Discount"),
+    DISCOUNT("Discount"),
 
     @Json(name = "Gift")
-    gift("Gift"),
+    GIFT("Gift"),
 
     @Json(name = "Charging")
-    charging("Charging"),
+    CHARGING("Charging"),
 
     @Json(name = "Activation")
-    activation("Activation");
+    ACTIVATION("Activation");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

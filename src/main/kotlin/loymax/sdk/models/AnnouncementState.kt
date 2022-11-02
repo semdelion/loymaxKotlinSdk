@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: draft,ready,published
+ * Values: DRAFT,READY,PUBLISHED
  */
 
 enum class AnnouncementState(val value: kotlin.String) {
 
     @Json(name = "Draft")
-    draft("Draft"),
+    DRAFT("Draft"),
 
     @Json(name = "Ready")
-    ready("Ready"),
+    READY("Ready"),
 
     @Json(name = "Published")
-    published("Published");
+    PUBLISHED("Published");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

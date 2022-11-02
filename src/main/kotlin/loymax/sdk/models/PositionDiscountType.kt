@@ -21,34 +21,34 @@ import com.squareup.moshi.Json
 /**
  * Тип скидки.
  *
- * Values: calculatedCashback,calculatedDiscount,partnerDiscount,partnerCashback,positionCharge,calculatedPayment,calculatedGiftCardPayment,calculatedGiftCertificatePayment
+ * Values: CALCULATED_CASHBACK,CALCULATED_DISCOUNT,PARTNER_DISCOUNT,PARTNER_CASHBACK,POSITION_CHARGE,CALCULATED_PAYMENT,CALCULATED_GIFT_CARD_PAYMENT,CALCULATED_GIFT_CERTIFICATE_PAYMENT
  */
 
 enum class PositionDiscountType(val value: kotlin.String) {
 
     @Json(name = "CalculatedCashback")
-    calculatedCashback("CalculatedCashback"),
+    CALCULATED_CASHBACK("CalculatedCashback"),
 
     @Json(name = "CalculatedDiscount")
-    calculatedDiscount("CalculatedDiscount"),
+    CALCULATED_DISCOUNT("CalculatedDiscount"),
 
     @Json(name = "PartnerDiscount")
-    partnerDiscount("PartnerDiscount"),
+    PARTNER_DISCOUNT("PartnerDiscount"),
 
     @Json(name = "PartnerCashback")
-    partnerCashback("PartnerCashback"),
+    PARTNER_CASHBACK("PartnerCashback"),
 
     @Json(name = "PositionCharge")
-    positionCharge("PositionCharge"),
+    POSITION_CHARGE("PositionCharge"),
 
     @Json(name = "CalculatedPayment")
-    calculatedPayment("CalculatedPayment"),
+    CALCULATED_PAYMENT("CalculatedPayment"),
 
     @Json(name = "CalculatedGiftCardPayment")
-    calculatedGiftCardPayment("CalculatedGiftCardPayment"),
+    CALCULATED_GIFT_CARD_PAYMENT("CalculatedGiftCardPayment"),
 
     @Json(name = "CalculatedGiftCertificatePayment")
-    calculatedGiftCertificatePayment("CalculatedGiftCertificatePayment");
+    CALCULATED_GIFT_CERTIFICATE_PAYMENT("CalculatedGiftCertificatePayment");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

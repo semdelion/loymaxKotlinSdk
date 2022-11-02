@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * Тип реферального кода.
  *
- * Values: cardNumber
+ * Values: CARD_NUMBER
  */
 
 enum class ReferrerCodeType(val value: kotlin.String) {
 
     @Json(name = "CardNumber")
-    cardNumber("CardNumber");
+    CARD_NUMBER("CardNumber");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

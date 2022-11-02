@@ -21,34 +21,34 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: aSCII,cp866,koi8r,windows1251,unicode,uTF7,uTF8,uTF32
+ * Values: ASCII,CP866,KOI8R,WINDOWS1251,UNICODE,UTF7,UTF8,UTF32
  */
 
 enum class DeviceTypeValidEncodingType(val value: kotlin.String) {
 
     @Json(name = "ASCII")
-    aSCII("ASCII"),
+    ASCII("ASCII"),
 
     @Json(name = "Cp866")
-    cp866("Cp866"),
+    CP866("Cp866"),
 
     @Json(name = "Koi8r")
-    koi8r("Koi8r"),
+    KOI8R("Koi8r"),
 
     @Json(name = "Windows1251")
-    windows1251("Windows1251"),
+    WINDOWS1251("Windows1251"),
 
     @Json(name = "Unicode")
-    unicode("Unicode"),
+    UNICODE("Unicode"),
 
     @Json(name = "UTF7")
-    uTF7("UTF7"),
+    UTF7("UTF7"),
 
     @Json(name = "UTF8")
-    uTF8("UTF8"),
+    UTF8("UTF8"),
 
     @Json(name = "UTF32")
-    uTF32("UTF32");
+    UTF32("UTF32");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

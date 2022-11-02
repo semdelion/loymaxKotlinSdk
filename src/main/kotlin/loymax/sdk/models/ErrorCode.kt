@@ -21,148 +21,148 @@ import com.squareup.moshi.Json
 /**
  * Код ответа.
  *
- * Values: ok,systemError,versionError,parseError,formatException,requereFieldException,signatureError,signatureNotFound,certificateError,cardNotFound,deviceNotFound,largePaymentAmount,notEnoughMoney,cardBlocked,deviceBlocked,notUniqueOperationID,operationNotFound,operationIsConfirmed,operationIsCanceled,wrongPin,cashierNotFound,cardHolderNotFound,cardNotActivated,discountException,purchaseNotFound,differentCheque,incorrectOperationOrder,cardExtraPayment,confirmedPurchaseOperation,purchaseExtraPayment,limitGained,paymentException,differentPurchase,couponsException,businessError,applicationDeviceGrant,notUniquePurchaseID,unspecifiedLoyaltyProgram,divisibilityError,differentLegals,created,payTypeIsNotExist,payTypeIsArchived,cardExpired,giftCertificateError,purchaseOperationConflict
+ * Values: OK,SYSTEM_ERROR,VERSION_ERROR,PARSE_ERROR,FORMAT_EXCEPTION,REQUERE_FIELD_EXCEPTION,SIGNATURE_ERROR,SIGNATURE_NOT_FOUND,CERTIFICATE_ERROR,CARD_NOT_FOUND,DEVICE_NOT_FOUND,LARGE_PAYMENT_AMOUNT,NOT_ENOUGH_MONEY,CARD_BLOCKED,DEVICE_BLOCKED,NOT_UNIQUE_OPERATION_ID,OPERATION_NOT_FOUND,OPERATION_IS_CONFIRMED,OPERATION_IS_CANCELED,WRONG_PIN,CASHIER_NOT_FOUND,CARD_HOLDER_NOT_FOUND,CARD_NOT_ACTIVATED,DISCOUNT_EXCEPTION,PURCHASE_NOT_FOUND,DIFFERENT_CHEQUE,INCORRECT_OPERATION_ORDER,CARD_EXTRA_PAYMENT,CONFIRMED_PURCHASE_OPERATION,PURCHASE_EXTRA_PAYMENT,LIMIT_GAINED,PAYMENT_EXCEPTION,DIFFERENT_PURCHASE,COUPONS_EXCEPTION,BUSINESS_ERROR,APPLICATION_DEVICE_GRANT,NOT_UNIQUE_PURCHASE_ID,UNSPECIFIED_LOYALTY_PROGRAM,DIVISIBILITY_ERROR,DIFFERENT_LEGALS,CREATED,PAY_TYPE_IS_NOT_EXIST,PAY_TYPE_IS_ARCHIVED,CARD_EXPIRED,GIFT_CERTIFICATE_ERROR,PURCHASE_OPERATION_CONFLICT
  */
 
 enum class ErrorCode(val value: kotlin.String) {
 
     @Json(name = "Ok")
-    ok("Ok"),
+    OK("Ok"),
 
     @Json(name = "SystemError")
-    systemError("SystemError"),
+    SYSTEM_ERROR("SystemError"),
 
     @Json(name = "VersionError")
-    versionError("VersionError"),
+    VERSION_ERROR("VersionError"),
 
     @Json(name = "ParseError")
-    parseError("ParseError"),
+    PARSE_ERROR("ParseError"),
 
     @Json(name = "FormatException")
-    formatException("FormatException"),
+    FORMAT_EXCEPTION("FormatException"),
 
     @Json(name = "RequereFieldException")
-    requereFieldException("RequereFieldException"),
+    REQUERE_FIELD_EXCEPTION("RequereFieldException"),
 
     @Json(name = "SignatureError")
-    signatureError("SignatureError"),
+    SIGNATURE_ERROR("SignatureError"),
 
     @Json(name = "SignatureNotFound")
-    signatureNotFound("SignatureNotFound"),
+    SIGNATURE_NOT_FOUND("SignatureNotFound"),
 
     @Json(name = "CertificateError")
-    certificateError("CertificateError"),
+    CERTIFICATE_ERROR("CertificateError"),
 
     @Json(name = "CardNotFound")
-    cardNotFound("CardNotFound"),
+    CARD_NOT_FOUND("CardNotFound"),
 
     @Json(name = "DeviceNotFound")
-    deviceNotFound("DeviceNotFound"),
+    DEVICE_NOT_FOUND("DeviceNotFound"),
 
     @Json(name = "LargePaymentAmount")
-    largePaymentAmount("LargePaymentAmount"),
+    LARGE_PAYMENT_AMOUNT("LargePaymentAmount"),
 
     @Json(name = "NotEnoughMoney")
-    notEnoughMoney("NotEnoughMoney"),
+    NOT_ENOUGH_MONEY("NotEnoughMoney"),
 
     @Json(name = "CardBlocked")
-    cardBlocked("CardBlocked"),
+    CARD_BLOCKED("CardBlocked"),
 
     @Json(name = "DeviceBlocked")
-    deviceBlocked("DeviceBlocked"),
+    DEVICE_BLOCKED("DeviceBlocked"),
 
     @Json(name = "NotUniqueOperationID")
-    notUniqueOperationID("NotUniqueOperationID"),
+    NOT_UNIQUE_OPERATION_ID("NotUniqueOperationID"),
 
     @Json(name = "OperationNotFound")
-    operationNotFound("OperationNotFound"),
+    OPERATION_NOT_FOUND("OperationNotFound"),
 
     @Json(name = "OperationIsConfirmed")
-    operationIsConfirmed("OperationIsConfirmed"),
+    OPERATION_IS_CONFIRMED("OperationIsConfirmed"),
 
     @Json(name = "OperationIsCanceled")
-    operationIsCanceled("OperationIsCanceled"),
+    OPERATION_IS_CANCELED("OperationIsCanceled"),
 
     @Json(name = "WrongPin")
-    wrongPin("WrongPin"),
+    WRONG_PIN("WrongPin"),
 
     @Json(name = "CashierNotFound")
-    cashierNotFound("CashierNotFound"),
+    CASHIER_NOT_FOUND("CashierNotFound"),
 
     @Json(name = "CardHolderNotFound")
-    cardHolderNotFound("CardHolderNotFound"),
+    CARD_HOLDER_NOT_FOUND("CardHolderNotFound"),
 
     @Json(name = "CardNotActivated")
-    cardNotActivated("CardNotActivated"),
+    CARD_NOT_ACTIVATED("CardNotActivated"),
 
     @Json(name = "DiscountException")
-    discountException("DiscountException"),
+    DISCOUNT_EXCEPTION("DiscountException"),
 
     @Json(name = "PurchaseNotFound")
-    purchaseNotFound("PurchaseNotFound"),
+    PURCHASE_NOT_FOUND("PurchaseNotFound"),
 
     @Json(name = "DifferentCheque")
-    differentCheque("DifferentCheque"),
+    DIFFERENT_CHEQUE("DifferentCheque"),
 
     @Json(name = "IncorrectOperationOrder")
-    incorrectOperationOrder("IncorrectOperationOrder"),
+    INCORRECT_OPERATION_ORDER("IncorrectOperationOrder"),
 
     @Json(name = "CardExtraPayment")
-    cardExtraPayment("CardExtraPayment"),
+    CARD_EXTRA_PAYMENT("CardExtraPayment"),
 
     @Json(name = "ConfirmedPurchaseOperation")
-    confirmedPurchaseOperation("ConfirmedPurchaseOperation"),
+    CONFIRMED_PURCHASE_OPERATION("ConfirmedPurchaseOperation"),
 
     @Json(name = "PurchaseExtraPayment")
-    purchaseExtraPayment("PurchaseExtraPayment"),
+    PURCHASE_EXTRA_PAYMENT("PurchaseExtraPayment"),
 
     @Json(name = "LimitGained")
-    limitGained("LimitGained"),
+    LIMIT_GAINED("LimitGained"),
 
     @Json(name = "PaymentException")
-    paymentException("PaymentException"),
+    PAYMENT_EXCEPTION("PaymentException"),
 
     @Json(name = "DifferentPurchase")
-    differentPurchase("DifferentPurchase"),
+    DIFFERENT_PURCHASE("DifferentPurchase"),
 
     @Json(name = "CouponsException")
-    couponsException("CouponsException"),
+    COUPONS_EXCEPTION("CouponsException"),
 
     @Json(name = "BusinessError")
-    businessError("BusinessError"),
+    BUSINESS_ERROR("BusinessError"),
 
     @Json(name = "ApplicationDeviceGrant")
-    applicationDeviceGrant("ApplicationDeviceGrant"),
+    APPLICATION_DEVICE_GRANT("ApplicationDeviceGrant"),
 
     @Json(name = "NotUniquePurchaseID")
-    notUniquePurchaseID("NotUniquePurchaseID"),
+    NOT_UNIQUE_PURCHASE_ID("NotUniquePurchaseID"),
 
     @Json(name = "UnspecifiedLoyaltyProgram")
-    unspecifiedLoyaltyProgram("UnspecifiedLoyaltyProgram"),
+    UNSPECIFIED_LOYALTY_PROGRAM("UnspecifiedLoyaltyProgram"),
 
     @Json(name = "DivisibilityError")
-    divisibilityError("DivisibilityError"),
+    DIVISIBILITY_ERROR("DivisibilityError"),
 
     @Json(name = "DifferentLegals")
-    differentLegals("DifferentLegals"),
+    DIFFERENT_LEGALS("DifferentLegals"),
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "PayTypeIsNotExist")
-    payTypeIsNotExist("PayTypeIsNotExist"),
+    PAY_TYPE_IS_NOT_EXIST("PayTypeIsNotExist"),
 
     @Json(name = "PayTypeIsArchived")
-    payTypeIsArchived("PayTypeIsArchived"),
+    PAY_TYPE_IS_ARCHIVED("PayTypeIsArchived"),
 
     @Json(name = "CardExpired")
-    cardExpired("CardExpired"),
+    CARD_EXPIRED("CardExpired"),
 
     @Json(name = "GiftCertificateError")
-    giftCertificateError("GiftCertificateError"),
+    GIFT_CERTIFICATE_ERROR("GiftCertificateError"),
 
     @Json(name = "PurchaseOperationConflict")
-    purchaseOperationConflict("PurchaseOperationConflict");
+    PURCHASE_OPERATION_CONFLICT("PurchaseOperationConflict");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

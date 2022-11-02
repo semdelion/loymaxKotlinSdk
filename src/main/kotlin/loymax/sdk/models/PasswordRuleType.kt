@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Тип правила.
  *
- * Values: length,latinCharacters,capitalLetters,numbers,specialCharacters
+ * Values: LENGTH,LATIN_CHARACTERS,CAPITAL_LETTERS,NUMBERS,SPECIAL_CHARACTERS
  */
 
 enum class PasswordRuleType(val value: kotlin.String) {
 
     @Json(name = "Length")
-    length("Length"),
+    LENGTH("Length"),
 
     @Json(name = "LatinCharacters")
-    latinCharacters("LatinCharacters"),
+    LATIN_CHARACTERS("LatinCharacters"),
 
     @Json(name = "CapitalLetters")
-    capitalLetters("CapitalLetters"),
+    CAPITAL_LETTERS("CapitalLetters"),
 
     @Json(name = "Numbers")
-    numbers("Numbers"),
+    NUMBERS("Numbers"),
 
     @Json(name = "SpecialCharacters")
-    specialCharacters("SpecialCharacters");
+    SPECIAL_CHARACTERS("SpecialCharacters");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

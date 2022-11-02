@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Состояние Push сообщения.
  *
- * Values: delivered,read
+ * Values: DELIVERED,READ
  */
 
 enum class PushNotificationState(val value: kotlin.String) {
 
     @Json(name = "Delivered")
-    delivered("Delivered"),
+    DELIVERED("Delivered"),
 
     @Json(name = "Read")
-    read("Read");
+    READ("Read");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

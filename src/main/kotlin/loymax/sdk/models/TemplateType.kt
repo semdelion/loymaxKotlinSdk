@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: headerAndText,push,simple,messenger,socialNetworks,chatBot
+ * Values: HEADER_AND_TEXT,PUSH,SIMPLE,MESSENGER,SOCIAL_NETWORKS,CHAT_BOT
  */
 
 enum class TemplateType(val value: kotlin.String) {
 
     @Json(name = "HeaderAndText")
-    headerAndText("HeaderAndText"),
+    HEADER_AND_TEXT("HeaderAndText"),
 
     @Json(name = "Push")
-    push("Push"),
+    PUSH("Push"),
 
     @Json(name = "Simple")
-    simple("Simple"),
+    SIMPLE("Simple"),
 
     @Json(name = "Messenger")
-    messenger("Messenger"),
+    MESSENGER("Messenger"),
 
     @Json(name = "SocialNetworks")
-    socialNetworks("SocialNetworks"),
+    SOCIAL_NETWORKS("SocialNetworks"),
 
     @Json(name = "ChatBot")
-    chatBot("ChatBot");
+    CHAT_BOT("ChatBot");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

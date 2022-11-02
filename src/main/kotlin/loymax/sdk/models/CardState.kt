@@ -21,37 +21,37 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: emitted,packed,activated,replaced,creating,created,prepared,issued,expired
+ * Values: EMITTED,PACKED,ACTIVATED,REPLACED,CREATING,CREATED,PREPARED,ISSUED,EXPIRED
  */
 
 enum class CardState(val value: kotlin.String) {
 
     @Json(name = "Emitted")
-    emitted("Emitted"),
+    EMITTED("Emitted"),
 
     @Json(name = "Packed")
-    packed("Packed"),
+    PACKED("Packed"),
 
     @Json(name = "Activated")
-    activated("Activated"),
+    ACTIVATED("Activated"),
 
     @Json(name = "Replaced")
-    replaced("Replaced"),
+    REPLACED("Replaced"),
 
     @Json(name = "Creating")
-    creating("Creating"),
+    CREATING("Creating"),
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "Prepared")
-    prepared("Prepared"),
+    PREPARED("Prepared"),
 
     @Json(name = "Issued")
-    issued("Issued"),
+    ISSUED("Issued"),
 
     @Json(name = "Expired")
-    expired("Expired");
+    EXPIRED("Expired");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

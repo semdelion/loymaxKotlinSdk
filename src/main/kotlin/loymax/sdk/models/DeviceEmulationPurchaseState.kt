@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * Состояние покупки.
  *
- * Values: created,closed,cancelled,confirmed,paid,calculated
+ * Values: CREATED,CLOSED,CANCELLED,CONFIRMED,PAID,CALCULATED
  */
 
 enum class DeviceEmulationPurchaseState(val value: kotlin.String) {
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "Closed")
-    closed("Closed"),
+    CLOSED("Closed"),
 
     @Json(name = "Cancelled")
-    cancelled("Cancelled"),
+    CANCELLED("Cancelled"),
 
     @Json(name = "Confirmed")
-    confirmed("Confirmed"),
+    CONFIRMED("Confirmed"),
 
     @Json(name = "Paid")
-    paid("Paid"),
+    PAID("Paid"),
 
     @Json(name = "Calculated")
-    calculated("Calculated");
+    CALCULATED("Calculated");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

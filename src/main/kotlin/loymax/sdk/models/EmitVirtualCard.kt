@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Статус привязки виртуальной карты.
  *
- * Values: notEmit,emitForAll,emitOnDemand
+ * Values: NOT_EMIT,EMIT_FOR_ALL,EMIT_ON_DEMAND
  */
 
 enum class EmitVirtualCard(val value: kotlin.String) {
 
     @Json(name = "NotEmit")
-    notEmit("NotEmit"),
+    NOT_EMIT("NotEmit"),
 
     @Json(name = "EmitForAll")
-    emitForAll("EmitForAll"),
+    EMIT_FOR_ALL("EmitForAll"),
 
     @Json(name = "EmitOnDemand")
-    emitOnDemand("EmitOnDemand");
+    EMIT_ON_DEMAND("EmitOnDemand");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

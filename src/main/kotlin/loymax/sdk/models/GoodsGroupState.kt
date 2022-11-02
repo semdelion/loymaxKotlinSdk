@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Состояние каталога товаров.
  *
- * Values: visible,invisible
+ * Values: VISIBLE,INVISIBLE
  */
 
 enum class GoodsGroupState(val value: kotlin.String) {
 
     @Json(name = "Visible")
-    visible("Visible"),
+    VISIBLE("Visible"),
 
     @Json(name = "Invisible")
-    invisible("Invisible");
+    INVISIBLE("Invisible");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

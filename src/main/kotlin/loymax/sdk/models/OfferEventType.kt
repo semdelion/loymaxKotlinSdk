@@ -21,178 +21,178 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: onPurchaseCalculate,onAttachPhone,onPurchaseConfirm,onPurchasePayment,onBalanceRequest,onCardIssue,onCardActivation,onSocialActivity,onSocialGroupJoin,onFriendInvite,onSocialGroupLeave,onQuestionnaireUpdate,onMobileAppInstall,onEndPersonRegistration,onSocialNetworkLink,onBonusLifetimeExpired,onBirthday,onPurchaseRefund,onReferralPurchase,onPurchaseCancel,onRemoveSocialActivity,onPurchaseDiscount,onSendPasswordToCheque,onGoodsSetProcess,onAttachEmail,onBonusLifetimeActivation,onPurchasePaymentCalculate,onPurchasePaymentCancel,onCouponPurchased,onCouponRefunded,onPurchaseDeposit,onCardAttach,onCardReplace,onExternalCardReplace,onPurchaseRefundCalculate,onManualCharge,onManualWithdraw,onIteratorProcess,onPersonStatusChange,onGiftCertificateSale,onGiftCertificatePayment,onGiftCertificateRefund,onGiftCertificatePaymentCancel,onStatusSystemCalculation,onBeginRegistration,onCustomerAttributeUpdate,onCustomerSubscriptionChange,onCardSet,onBlockCard,onUnblockCard,onDeleteCard,onRecoverCard,mergeCustomersProfiles,onCardCategoryChange,onCustomerStateChange,linkAccount
+ * Values: ON_PURCHASE_CALCULATE,ON_ATTACH_PHONE,ON_PURCHASE_CONFIRM,ON_PURCHASE_PAYMENT,ON_BALANCE_REQUEST,ON_CARD_ISSUE,ON_CARD_ACTIVATION,ON_SOCIAL_ACTIVITY,ON_SOCIAL_GROUP_JOIN,ON_FRIEND_INVITE,ON_SOCIAL_GROUP_LEAVE,ON_QUESTIONNAIRE_UPDATE,ON_MOBILE_APP_INSTALL,ON_END_PERSON_REGISTRATION,ON_SOCIAL_NETWORK_LINK,ON_BONUS_LIFETIME_EXPIRED,ON_BIRTHDAY,ON_PURCHASE_REFUND,ON_REFERRAL_PURCHASE,ON_PURCHASE_CANCEL,ON_REMOVE_SOCIAL_ACTIVITY,ON_PURCHASE_DISCOUNT,ON_SEND_PASSWORD_TO_CHEQUE,ON_GOODS_SET_PROCESS,ON_ATTACH_EMAIL,ON_BONUS_LIFETIME_ACTIVATION,ON_PURCHASE_PAYMENT_CALCULATE,ON_PURCHASE_PAYMENT_CANCEL,ON_COUPON_PURCHASED,ON_COUPON_REFUNDED,ON_PURCHASE_DEPOSIT,ON_CARD_ATTACH,ON_CARD_REPLACE,ON_EXTERNAL_CARD_REPLACE,ON_PURCHASE_REFUND_CALCULATE,ON_MANUAL_CHARGE,ON_MANUAL_WITHDRAW,ON_ITERATOR_PROCESS,ON_PERSON_STATUS_CHANGE,ON_GIFT_CERTIFICATE_SALE,ON_GIFT_CERTIFICATE_PAYMENT,ON_GIFT_CERTIFICATE_REFUND,ON_GIFT_CERTIFICATE_PAYMENT_CANCEL,ON_STATUS_SYSTEM_CALCULATION,ON_BEGIN_REGISTRATION,ON_CUSTOMER_ATTRIBUTE_UPDATE,ON_CUSTOMER_SUBSCRIPTION_CHANGE,ON_CARD_SET,ON_BLOCK_CARD,ON_UNBLOCK_CARD,ON_DELETE_CARD,ON_RECOVER_CARD,MERGE_CUSTOMERS_PROFILES,ON_CARD_CATEGORY_CHANGE,ON_CUSTOMER_STATE_CHANGE,LINK_ACCOUNT
  */
 
 enum class OfferEventType(val value: kotlin.String) {
 
     @Json(name = "OnPurchaseCalculate")
-    onPurchaseCalculate("OnPurchaseCalculate"),
+    ON_PURCHASE_CALCULATE("OnPurchaseCalculate"),
 
     @Json(name = "OnAttachPhone")
-    onAttachPhone("OnAttachPhone"),
+    ON_ATTACH_PHONE("OnAttachPhone"),
 
     @Json(name = "OnPurchaseConfirm")
-    onPurchaseConfirm("OnPurchaseConfirm"),
+    ON_PURCHASE_CONFIRM("OnPurchaseConfirm"),
 
     @Json(name = "OnPurchasePayment")
-    onPurchasePayment("OnPurchasePayment"),
+    ON_PURCHASE_PAYMENT("OnPurchasePayment"),
 
     @Json(name = "OnBalanceRequest")
-    onBalanceRequest("OnBalanceRequest"),
+    ON_BALANCE_REQUEST("OnBalanceRequest"),
 
     @Json(name = "OnCardIssue")
-    onCardIssue("OnCardIssue"),
+    ON_CARD_ISSUE("OnCardIssue"),
 
     @Json(name = "OnCardActivation")
-    onCardActivation("OnCardActivation"),
+    ON_CARD_ACTIVATION("OnCardActivation"),
 
     @Json(name = "OnSocialActivity")
-    onSocialActivity("OnSocialActivity"),
+    ON_SOCIAL_ACTIVITY("OnSocialActivity"),
 
     @Json(name = "OnSocialGroupJoin")
-    onSocialGroupJoin("OnSocialGroupJoin"),
+    ON_SOCIAL_GROUP_JOIN("OnSocialGroupJoin"),
 
     @Json(name = "OnFriendInvite")
-    onFriendInvite("OnFriendInvite"),
+    ON_FRIEND_INVITE("OnFriendInvite"),
 
     @Json(name = "OnSocialGroupLeave")
-    onSocialGroupLeave("OnSocialGroupLeave"),
+    ON_SOCIAL_GROUP_LEAVE("OnSocialGroupLeave"),
 
     @Json(name = "OnQuestionnaireUpdate")
-    onQuestionnaireUpdate("OnQuestionnaireUpdate"),
+    ON_QUESTIONNAIRE_UPDATE("OnQuestionnaireUpdate"),
 
     @Json(name = "OnMobileAppInstall")
-    onMobileAppInstall("OnMobileAppInstall"),
+    ON_MOBILE_APP_INSTALL("OnMobileAppInstall"),
 
     @Json(name = "OnEndPersonRegistration")
-    onEndPersonRegistration("OnEndPersonRegistration"),
+    ON_END_PERSON_REGISTRATION("OnEndPersonRegistration"),
 
     @Json(name = "OnSocialNetworkLink")
-    onSocialNetworkLink("OnSocialNetworkLink"),
+    ON_SOCIAL_NETWORK_LINK("OnSocialNetworkLink"),
 
     @Json(name = "OnBonusLifetimeExpired")
-    onBonusLifetimeExpired("OnBonusLifetimeExpired"),
+    ON_BONUS_LIFETIME_EXPIRED("OnBonusLifetimeExpired"),
 
     @Json(name = "OnBirthday")
-    onBirthday("OnBirthday"),
+    ON_BIRTHDAY("OnBirthday"),
 
     @Json(name = "OnPurchaseRefund")
-    onPurchaseRefund("OnPurchaseRefund"),
+    ON_PURCHASE_REFUND("OnPurchaseRefund"),
 
     @Json(name = "OnReferralPurchase")
-    onReferralPurchase("OnReferralPurchase"),
+    ON_REFERRAL_PURCHASE("OnReferralPurchase"),
 
     @Json(name = "OnPurchaseCancel")
-    onPurchaseCancel("OnPurchaseCancel"),
+    ON_PURCHASE_CANCEL("OnPurchaseCancel"),
 
     @Json(name = "OnRemoveSocialActivity")
-    onRemoveSocialActivity("OnRemoveSocialActivity"),
+    ON_REMOVE_SOCIAL_ACTIVITY("OnRemoveSocialActivity"),
 
     @Json(name = "OnPurchaseDiscount")
-    onPurchaseDiscount("OnPurchaseDiscount"),
+    ON_PURCHASE_DISCOUNT("OnPurchaseDiscount"),
 
     @Json(name = "OnSendPasswordToCheque")
-    onSendPasswordToCheque("OnSendPasswordToCheque"),
+    ON_SEND_PASSWORD_TO_CHEQUE("OnSendPasswordToCheque"),
 
     @Json(name = "OnGoodsSetProcess")
-    onGoodsSetProcess("OnGoodsSetProcess"),
+    ON_GOODS_SET_PROCESS("OnGoodsSetProcess"),
 
     @Json(name = "OnAttachEmail")
-    onAttachEmail("OnAttachEmail"),
+    ON_ATTACH_EMAIL("OnAttachEmail"),
 
     @Json(name = "OnBonusLifetimeActivation")
-    onBonusLifetimeActivation("OnBonusLifetimeActivation"),
+    ON_BONUS_LIFETIME_ACTIVATION("OnBonusLifetimeActivation"),
 
     @Json(name = "OnPurchasePaymentCalculate")
-    onPurchasePaymentCalculate("OnPurchasePaymentCalculate"),
+    ON_PURCHASE_PAYMENT_CALCULATE("OnPurchasePaymentCalculate"),
 
     @Json(name = "OnPurchasePaymentCancel")
-    onPurchasePaymentCancel("OnPurchasePaymentCancel"),
+    ON_PURCHASE_PAYMENT_CANCEL("OnPurchasePaymentCancel"),
 
     @Json(name = "OnCouponPurchased")
-    onCouponPurchased("OnCouponPurchased"),
+    ON_COUPON_PURCHASED("OnCouponPurchased"),
 
     @Json(name = "OnCouponRefunded")
-    onCouponRefunded("OnCouponRefunded"),
+    ON_COUPON_REFUNDED("OnCouponRefunded"),
 
     @Json(name = "OnPurchaseDeposit")
-    onPurchaseDeposit("OnPurchaseDeposit"),
+    ON_PURCHASE_DEPOSIT("OnPurchaseDeposit"),
 
     @Json(name = "OnCardAttach")
-    onCardAttach("OnCardAttach"),
+    ON_CARD_ATTACH("OnCardAttach"),
 
     @Json(name = "OnCardReplace")
-    onCardReplace("OnCardReplace"),
+    ON_CARD_REPLACE("OnCardReplace"),
 
     @Json(name = "OnExternalCardReplace")
-    onExternalCardReplace("OnExternalCardReplace"),
+    ON_EXTERNAL_CARD_REPLACE("OnExternalCardReplace"),
 
     @Json(name = "OnPurchaseRefundCalculate")
-    onPurchaseRefundCalculate("OnPurchaseRefundCalculate"),
+    ON_PURCHASE_REFUND_CALCULATE("OnPurchaseRefundCalculate"),
 
     @Json(name = "OnManualCharge")
-    onManualCharge("OnManualCharge"),
+    ON_MANUAL_CHARGE("OnManualCharge"),
 
     @Json(name = "OnManualWithdraw")
-    onManualWithdraw("OnManualWithdraw"),
+    ON_MANUAL_WITHDRAW("OnManualWithdraw"),
 
     @Json(name = "OnIteratorProcess")
-    onIteratorProcess("OnIteratorProcess"),
+    ON_ITERATOR_PROCESS("OnIteratorProcess"),
 
     @Json(name = "OnPersonStatusChange")
-    onPersonStatusChange("OnPersonStatusChange"),
+    ON_PERSON_STATUS_CHANGE("OnPersonStatusChange"),
 
     @Json(name = "OnGiftCertificateSale")
-    onGiftCertificateSale("OnGiftCertificateSale"),
+    ON_GIFT_CERTIFICATE_SALE("OnGiftCertificateSale"),
 
     @Json(name = "OnGiftCertificatePayment")
-    onGiftCertificatePayment("OnGiftCertificatePayment"),
+    ON_GIFT_CERTIFICATE_PAYMENT("OnGiftCertificatePayment"),
 
     @Json(name = "OnGiftCertificateRefund")
-    onGiftCertificateRefund("OnGiftCertificateRefund"),
+    ON_GIFT_CERTIFICATE_REFUND("OnGiftCertificateRefund"),
 
     @Json(name = "OnGiftCertificatePaymentCancel")
-    onGiftCertificatePaymentCancel("OnGiftCertificatePaymentCancel"),
+    ON_GIFT_CERTIFICATE_PAYMENT_CANCEL("OnGiftCertificatePaymentCancel"),
 
     @Json(name = "OnStatusSystemCalculation")
-    onStatusSystemCalculation("OnStatusSystemCalculation"),
+    ON_STATUS_SYSTEM_CALCULATION("OnStatusSystemCalculation"),
 
     @Json(name = "OnBeginRegistration")
-    onBeginRegistration("OnBeginRegistration"),
+    ON_BEGIN_REGISTRATION("OnBeginRegistration"),
 
     @Json(name = "OnCustomerAttributeUpdate")
-    onCustomerAttributeUpdate("OnCustomerAttributeUpdate"),
+    ON_CUSTOMER_ATTRIBUTE_UPDATE("OnCustomerAttributeUpdate"),
 
     @Json(name = "OnCustomerSubscriptionChange")
-    onCustomerSubscriptionChange("OnCustomerSubscriptionChange"),
+    ON_CUSTOMER_SUBSCRIPTION_CHANGE("OnCustomerSubscriptionChange"),
 
     @Json(name = "OnCardSet")
-    onCardSet("OnCardSet"),
+    ON_CARD_SET("OnCardSet"),
 
     @Json(name = "OnBlockCard")
-    onBlockCard("OnBlockCard"),
+    ON_BLOCK_CARD("OnBlockCard"),
 
     @Json(name = "OnUnblockCard")
-    onUnblockCard("OnUnblockCard"),
+    ON_UNBLOCK_CARD("OnUnblockCard"),
 
     @Json(name = "OnDeleteCard")
-    onDeleteCard("OnDeleteCard"),
+    ON_DELETE_CARD("OnDeleteCard"),
 
     @Json(name = "OnRecoverCard")
-    onRecoverCard("OnRecoverCard"),
+    ON_RECOVER_CARD("OnRecoverCard"),
 
     @Json(name = "MergeCustomersProfiles")
-    mergeCustomersProfiles("MergeCustomersProfiles"),
+    MERGE_CUSTOMERS_PROFILES("MergeCustomersProfiles"),
 
     @Json(name = "OnCardCategoryChange")
-    onCardCategoryChange("OnCardCategoryChange"),
+    ON_CARD_CATEGORY_CHANGE("OnCardCategoryChange"),
 
     @Json(name = "OnCustomerStateChange")
-    onCustomerStateChange("OnCustomerStateChange"),
+    ON_CUSTOMER_STATE_CHANGE("OnCustomerStateChange"),
 
     @Json(name = "LinkAccount")
-    linkAccount("LinkAccount");
+    LINK_ACCOUNT("LinkAccount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

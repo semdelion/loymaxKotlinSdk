@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип.
  *
- * Values: incoming,outgoing
+ * Values: INCOMING,OUTGOING
  */
 
 enum class SmsType(val value: kotlin.String) {
 
     @Json(name = "Incoming")
-    incoming("Incoming"),
+    INCOMING("Incoming"),
 
     @Json(name = "Outgoing")
-    outgoing("Outgoing");
+    OUTGOING("Outgoing");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

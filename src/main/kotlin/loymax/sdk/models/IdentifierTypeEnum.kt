@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: phone,email,personID,personUID,cardNumber
+ * Values: PHONE,EMAIL,PERSON_ID,PERSON_UID,CARD_NUMBER
  */
 
 enum class IdentifierTypeEnum(val value: kotlin.String) {
 
     @Json(name = "Phone")
-    phone("Phone"),
+    PHONE("Phone"),
 
     @Json(name = "Email")
-    email("Email"),
+    EMAIL("Email"),
 
     @Json(name = "PersonID")
-    personID("PersonID"),
+    PERSON_ID("PersonID"),
 
     @Json(name = "PersonUID")
-    personUID("PersonUID"),
+    PERSON_UID("PersonUID"),
 
     @Json(name = "CardNumber")
-    cardNumber("CardNumber");
+    CARD_NUMBER("CardNumber");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: original,personalGoods,personalOffer,all
+ * Values: ORIGINAL,PERSONAL_GOODS,PERSONAL_OFFER,ALL
  */
 
 enum class CommunicationOfferType(val value: kotlin.String) {
 
     @Json(name = "Original")
-    original("Original"),
+    ORIGINAL("Original"),
 
     @Json(name = "PersonalGoods")
-    personalGoods("PersonalGoods"),
+    PERSONAL_GOODS("PersonalGoods"),
 
     @Json(name = "PersonalOffer")
-    personalOffer("PersonalOffer"),
+    PERSONAL_OFFER("PersonalOffer"),
 
     @Json(name = "All")
-    all("All");
+    ALL("All");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

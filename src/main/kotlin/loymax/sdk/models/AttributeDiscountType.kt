@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип расчета из атрнибута.
  *
- * Values: pricePerUnit,amountPerWeight
+ * Values: PRICE_PER_UNIT,AMOUNT_PER_WEIGHT
  */
 
 enum class AttributeDiscountType(val value: kotlin.String) {
 
     @Json(name = "PricePerUnit")
-    pricePerUnit("PricePerUnit"),
+    PRICE_PER_UNIT("PricePerUnit"),
 
     @Json(name = "AmountPerWeight")
-    amountPerWeight("AmountPerWeight");
+    AMOUNT_PER_WEIGHT("AmountPerWeight");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

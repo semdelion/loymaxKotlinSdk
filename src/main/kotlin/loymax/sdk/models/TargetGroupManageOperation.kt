@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Доступные операции над целевыми аудиториями.
  *
- * Values: none,view,edit,calculate
+ * Values: NONE,VIEW,EDIT,CALCULATE
  */
 
 enum class TargetGroupManageOperation(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "View")
-    view("View"),
+    VIEW("View"),
 
     @Json(name = "Edit")
-    edit("Edit"),
+    EDIT("Edit"),
 
     @Json(name = "Calculate")
-    calculate("Calculate");
+    CALCULATE("Calculate");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

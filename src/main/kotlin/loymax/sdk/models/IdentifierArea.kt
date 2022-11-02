@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Зона идентификатора.
  *
- * Values: default,users
+ * Values: DEFAULT,USERS
  */
 
 enum class IdentifierArea(val value: kotlin.String) {
 
     @Json(name = "Default")
-    default("Default"),
+    DEFAULT("Default"),
 
     @Json(name = "Users")
-    users("Users");
+    USERS("Users");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

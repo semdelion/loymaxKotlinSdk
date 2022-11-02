@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: withoutExpiryPeriod,day,month,year
+ * Values: WITHOUT_EXPIRY_PERIOD,DAY,MONTH,YEAR
  */
 
 enum class CardExpiryPeriodType(val value: kotlin.String) {
 
     @Json(name = "WithoutExpiryPeriod")
-    withoutExpiryPeriod("WithoutExpiryPeriod"),
+    WITHOUT_EXPIRY_PERIOD("WithoutExpiryPeriod"),
 
     @Json(name = "Day")
-    day("Day"),
+    DAY("Day"),
 
     @Json(name = "Month")
-    month("Month"),
+    MONTH("Month"),
 
     @Json(name = "Year")
-    year("Year");
+    YEAR("Year");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

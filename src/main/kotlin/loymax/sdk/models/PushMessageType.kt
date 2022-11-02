@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип Push-уведомления (для соответствующего типа).
  *
- * Values: general,echo,personalOffer
+ * Values: GENERAL,ECHO,PERSONAL_OFFER
  */
 
 enum class PushMessageType(val value: kotlin.String) {
 
     @Json(name = "General")
-    general("General"),
+    GENERAL("General"),
 
     @Json(name = "Echo")
-    echo("Echo"),
+    ECHO("Echo"),
 
     @Json(name = "PersonalOffer")
-    personalOffer("PersonalOffer");
+    PERSONAL_OFFER("PersonalOffer");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: bonusActivation,bonusExpiration
+ * Values: BONUS_ACTIVATION,BONUS_EXPIRATION
  */
 
 enum class AccountChangeType(val value: kotlin.String) {
 
     @Json(name = "BonusActivation")
-    bonusActivation("BonusActivation"),
+    BONUS_ACTIVATION("BonusActivation"),
 
     @Json(name = "BonusExpiration")
-    bonusExpiration("BonusExpiration");
+    BONUS_EXPIRATION("BonusExpiration");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип изменения.
  *
- * Values: increaseCellsCount,decreaseCellsCount,setCellsCount
+ * Values: INCREASE_CELLS_COUNT,DECREASE_CELLS_COUNT,SET_CELLS_COUNT
  */
 
 enum class FavoriteGoodsChangeType(val value: kotlin.String) {
 
     @Json(name = "IncreaseCellsCount")
-    increaseCellsCount("IncreaseCellsCount"),
+    INCREASE_CELLS_COUNT("IncreaseCellsCount"),
 
     @Json(name = "DecreaseCellsCount")
-    decreaseCellsCount("DecreaseCellsCount"),
+    DECREASE_CELLS_COUNT("DecreaseCellsCount"),
 
     @Json(name = "SetCellsCount")
-    setCellsCount("SetCellsCount");
+    SET_CELLS_COUNT("SetCellsCount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

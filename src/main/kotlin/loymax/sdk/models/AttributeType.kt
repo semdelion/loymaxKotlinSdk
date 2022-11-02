@@ -21,37 +21,37 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: string,boolean,numeric,dateTime,image,video,html,dictionary,mechant
+ * Values: STRING,BOOLEAN,NUMERIC,DATE_TIME,IMAGE,VIDEO,HTML,DICTIONARY,MECHANT
  */
 
 enum class AttributeType(val value: kotlin.String) {
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "Boolean")
-    boolean("Boolean"),
+    BOOLEAN("Boolean"),
 
     @Json(name = "Numeric")
-    numeric("Numeric"),
+    NUMERIC("Numeric"),
 
     @Json(name = "DateTime")
-    dateTime("DateTime"),
+    DATE_TIME("DateTime"),
 
     @Json(name = "Image")
-    image("Image"),
+    IMAGE("Image"),
 
     @Json(name = "Video")
-    video("Video"),
+    VIDEO("Video"),
 
     @Json(name = "Html")
-    html("Html"),
+    HTML("Html"),
 
     @Json(name = "Dictionary")
-    dictionary("Dictionary"),
+    DICTIONARY("Dictionary"),
 
     @Json(name = "Mechant")
-    mechant("Mechant");
+    MECHANT("Mechant");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

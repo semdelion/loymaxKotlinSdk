@@ -21,37 +21,37 @@ import com.squareup.moshi.Json
 /**
  * Способ агрегации покупок.
  *
- * Values: purchaseAmount,purchaseCount,positionQuantity,paymentAmount,cashbackAmount,chargingAmount,cashbackChargingAmount,averagePurchaseAmount,discountAmount
+ * Values: PURCHASE_AMOUNT,PURCHASE_COUNT,POSITION_QUANTITY,PAYMENT_AMOUNT,CASHBACK_AMOUNT,CHARGING_AMOUNT,CASHBACK_CHARGING_AMOUNT,AVERAGE_PURCHASE_AMOUNT,DISCOUNT_AMOUNT
  */
 
 enum class FilterPurchaseGroupType(val value: kotlin.String) {
 
     @Json(name = "PurchaseAmount")
-    purchaseAmount("PurchaseAmount"),
+    PURCHASE_AMOUNT("PurchaseAmount"),
 
     @Json(name = "PurchaseCount")
-    purchaseCount("PurchaseCount"),
+    PURCHASE_COUNT("PurchaseCount"),
 
     @Json(name = "PositionQuantity")
-    positionQuantity("PositionQuantity"),
+    POSITION_QUANTITY("PositionQuantity"),
 
     @Json(name = "PaymentAmount")
-    paymentAmount("PaymentAmount"),
+    PAYMENT_AMOUNT("PaymentAmount"),
 
     @Json(name = "CashbackAmount")
-    cashbackAmount("CashbackAmount"),
+    CASHBACK_AMOUNT("CashbackAmount"),
 
     @Json(name = "ChargingAmount")
-    chargingAmount("ChargingAmount"),
+    CHARGING_AMOUNT("ChargingAmount"),
 
     @Json(name = "CashbackChargingAmount")
-    cashbackChargingAmount("CashbackChargingAmount"),
+    CASHBACK_CHARGING_AMOUNT("CashbackChargingAmount"),
 
     @Json(name = "AveragePurchaseAmount")
-    averagePurchaseAmount("AveragePurchaseAmount"),
+    AVERAGE_PURCHASE_AMOUNT("AveragePurchaseAmount"),
 
     @Json(name = "DiscountAmount")
-    discountAmount("DiscountAmount");
+    DISCOUNT_AMOUNT("DiscountAmount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

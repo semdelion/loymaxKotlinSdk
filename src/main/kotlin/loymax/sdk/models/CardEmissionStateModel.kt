@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Состояние.
  *
- * Values: normal,uploading,uploadingError,undefined
+ * Values: NORMAL,UPLOADING,UPLOADING_ERROR,UNDEFINED
  */
 
 enum class CardEmissionStateModel(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Uploading")
-    uploading("Uploading"),
+    UPLOADING("Uploading"),
 
     @Json(name = "UploadingError")
-    uploadingError("UploadingError"),
+    UPLOADING_ERROR("UploadingError"),
 
     @Json(name = "Undefined")
-    undefined("Undefined");
+    UNDEFINED("Undefined");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

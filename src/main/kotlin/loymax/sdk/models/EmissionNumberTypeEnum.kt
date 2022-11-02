@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип номера эмиссии (Название алгоритма вычисления контрольной цифры номера).
  *
- * Values: eAN13,luhn16,luhn
+ * Values: EAN13,LUHN16,LUHN
  */
 
 enum class EmissionNumberTypeEnum(val value: kotlin.String) {
 
     @Json(name = "EAN13")
-    eAN13("EAN13"),
+    EAN13("EAN13"),
 
     @Json(name = "Luhn16")
-    luhn16("Luhn16"),
+    LUHN16("Luhn16"),
 
     @Json(name = "Luhn")
-    luhn("Luhn");
+    LUHN("Luhn");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

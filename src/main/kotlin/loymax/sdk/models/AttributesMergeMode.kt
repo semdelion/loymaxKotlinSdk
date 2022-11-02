@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Включен ли merge mode.
  *
- * Values: none,copyIfNotExist,sumOrAppend,alwaysCopy,max
+ * Values: NONE,COPY_IF_NOT_EXIST,SUM_OR_APPEND,ALWAYS_COPY,MAX
  */
 
 enum class AttributesMergeMode(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "CopyIfNotExist")
-    copyIfNotExist("CopyIfNotExist"),
+    COPY_IF_NOT_EXIST("CopyIfNotExist"),
 
     @Json(name = "SumOrAppend")
-    sumOrAppend("SumOrAppend"),
+    SUM_OR_APPEND("SumOrAppend"),
 
     @Json(name = "AlwaysCopy")
-    alwaysCopy("AlwaysCopy"),
+    ALWAYS_COPY("AlwaysCopy"),
 
     @Json(name = "Max")
-    max("Max");
+    MAX("Max");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * Тип.
  *
- * Values: currency,text,actionResultType,coupons,math,limitDetails
+ * Values: CURRENCY,TEXT,ACTION_RESULT_TYPE,COUPONS,MATH,LIMIT_DETAILS
  */
 
 enum class MetavariableTypes(val value: kotlin.String) {
 
     @Json(name = "Currency")
-    currency("Currency"),
+    CURRENCY("Currency"),
 
     @Json(name = "Text")
-    text("Text"),
+    TEXT("Text"),
 
     @Json(name = "ActionResultType")
-    actionResultType("ActionResultType"),
+    ACTION_RESULT_TYPE("ActionResultType"),
 
     @Json(name = "Coupons")
-    coupons("Coupons"),
+    COUPONS("Coupons"),
 
     @Json(name = "Math")
-    math("Math"),
+    MATH("Math"),
 
     @Json(name = "LimitDetails")
-    limitDetails("LimitDetails");
+    LIMIT_DETAILS("LimitDetails");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

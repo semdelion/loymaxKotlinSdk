@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: notPacked,notRequired,packed
+ * Values: NOT_PACKED,NOT_REQUIRED,PACKED
  */
 
 enum class CardEmissionPackingState(val value: kotlin.String) {
 
     @Json(name = "NotPacked")
-    notPacked("NotPacked"),
+    NOT_PACKED("NotPacked"),
 
     @Json(name = "NotRequired")
-    notRequired("NotRequired"),
+    NOT_REQUIRED("NotRequired"),
 
     @Json(name = "Packed")
-    packed("Packed");
+    PACKED("Packed");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

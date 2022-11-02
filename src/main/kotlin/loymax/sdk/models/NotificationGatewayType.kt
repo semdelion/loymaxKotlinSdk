@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: sms,email,push,viber,socialsNetworks,chatBot
+ * Values: SMS,EMAIL,PUSH,VIBER,SOCIALS_NETWORKS,CHAT_BOT
  */
 
 enum class NotificationGatewayType(val value: kotlin.String) {
 
     @Json(name = "Sms")
-    sms("Sms"),
+    SMS("Sms"),
 
     @Json(name = "Email")
-    email("Email"),
+    EMAIL("Email"),
 
     @Json(name = "Push")
-    push("Push"),
+    PUSH("Push"),
 
     @Json(name = "Viber")
-    viber("Viber"),
+    VIBER("Viber"),
 
     @Json(name = "SocialsNetworks")
-    socialsNetworks("SocialsNetworks"),
+    SOCIALS_NETWORKS("SocialsNetworks"),
 
     @Json(name = "ChatBot")
-    chatBot("ChatBot");
+    CHAT_BOT("ChatBot");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

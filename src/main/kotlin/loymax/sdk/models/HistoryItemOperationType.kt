@@ -21,37 +21,37 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: rewardBonus,rewardDiscount,rewardGift,rewardCharging,rewardBonusActivation,withdrawBonus,withdrawGiftCard,withdraw,withdrawBonusExpiration
+ * Values: REWARD_BONUS,REWARD_DISCOUNT,REWARD_GIFT,REWARD_CHARGING,REWARD_BONUS_ACTIVATION,WITHDRAW_BONUS,WITHDRAW_GIFT_CARD,WITHDRAW,WITHDRAW_BONUS_EXPIRATION
  */
 
 enum class HistoryItemOperationType(val value: kotlin.String) {
 
     @Json(name = "RewardBonus")
-    rewardBonus("RewardBonus"),
+    REWARD_BONUS("RewardBonus"),
 
     @Json(name = "RewardDiscount")
-    rewardDiscount("RewardDiscount"),
+    REWARD_DISCOUNT("RewardDiscount"),
 
     @Json(name = "RewardGift")
-    rewardGift("RewardGift"),
+    REWARD_GIFT("RewardGift"),
 
     @Json(name = "RewardCharging")
-    rewardCharging("RewardCharging"),
+    REWARD_CHARGING("RewardCharging"),
 
     @Json(name = "RewardBonusActivation")
-    rewardBonusActivation("RewardBonusActivation"),
+    REWARD_BONUS_ACTIVATION("RewardBonusActivation"),
 
     @Json(name = "WithdrawBonus")
-    withdrawBonus("WithdrawBonus"),
+    WITHDRAW_BONUS("WithdrawBonus"),
 
     @Json(name = "WithdrawGiftCard")
-    withdrawGiftCard("WithdrawGiftCard"),
+    WITHDRAW_GIFT_CARD("WithdrawGiftCard"),
 
     @Json(name = "Withdraw")
-    withdraw("Withdraw"),
+    WITHDRAW("Withdraw"),
 
     @Json(name = "WithdrawBonusExpiration")
-    withdrawBonusExpiration("WithdrawBonusExpiration");
+    WITHDRAW_BONUS_EXPIRATION("WithdrawBonusExpiration");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

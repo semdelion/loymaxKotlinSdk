@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Статус выполнения запроса  Success - запрос выполнен успешно, Fail - не удалось выполнить запрос, Error - ошибка бизнес-логики при выполнении запроса (например, не передан обязательный параметр запроса), ValidationError - ошибка валидации при выполнении запроса (например, введенные данные не соответствуют требуемому типу данных).
  *
- * Values: success,fail,error,validationError
+ * Values: SUCCESS,FAIL,ERROR,VALIDATION_ERROR
  */
 
 enum class ResultState(val value: kotlin.String) {
 
     @Json(name = "Success")
-    success("Success"),
+    SUCCESS("Success"),
 
     @Json(name = "Fail")
-    fail("Fail"),
+    FAIL("Fail"),
 
     @Json(name = "Error")
-    error("Error"),
+    ERROR("Error"),
 
     @Json(name = "ValidationError")
-    validationError("ValidationError");
+    VALIDATION_ERROR("ValidationError");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

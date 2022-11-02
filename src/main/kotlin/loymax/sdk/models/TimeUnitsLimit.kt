@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * Еденица времени жизни рассылки.
  *
- * Values: minute,hour,day,week,month,year
+ * Values: MINUTE,HOUR,DAY,WEEK,MONTH,YEAR
  */
 
 enum class TimeUnitsLimit(val value: kotlin.String) {
 
     @Json(name = "Minute")
-    minute("Minute"),
+    MINUTE("Minute"),
 
     @Json(name = "Hour")
-    hour("Hour"),
+    HOUR("Hour"),
 
     @Json(name = "Day")
-    day("Day"),
+    DAY("Day"),
 
     @Json(name = "Week")
-    week("Week"),
+    WEEK("Week"),
 
     @Json(name = "Month")
-    month("Month"),
+    MONTH("Month"),
 
     @Json(name = "Year")
-    year("Year");
+    YEAR("Year");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

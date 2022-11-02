@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Идентификатор обработчика.
  *
- * Values: personEmail,ageLimit,personItn
+ * Values: PERSON_EMAIL,AGE_LIMIT,PERSON_ITN
  */
 
 enum class AnswerHandlerType(val value: kotlin.String) {
 
     @Json(name = "PersonEmail")
-    personEmail("PersonEmail"),
+    PERSON_EMAIL("PersonEmail"),
 
     @Json(name = "AgeLimit")
-    ageLimit("AgeLimit"),
+    AGE_LIMIT("AgeLimit"),
 
     @Json(name = "PersonItn")
-    personItn("PersonItn");
+    PERSON_ITN("PersonItn");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

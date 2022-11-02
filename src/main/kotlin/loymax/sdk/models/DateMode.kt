@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Mode.
  *
- * Values: calendar,float
+ * Values: CALENDAR,FLOAT
  */
 
 enum class DateMode(val value: kotlin.String) {
 
     @Json(name = "Calendar")
-    calendar("Calendar"),
+    CALENDAR("Calendar"),
 
     @Json(name = "Float")
-    float("Float");
+    FLOAT("Float");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

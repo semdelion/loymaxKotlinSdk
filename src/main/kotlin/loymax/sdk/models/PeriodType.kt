@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Тип округления периода активации.
  *
- * Values: default,dayBeginning,certainDate,monthBeginning
+ * Values: DEFAULT,DAY_BEGINNING,CERTAIN_DATE,MONTH_BEGINNING
  */
 
 enum class PeriodType(val value: kotlin.String) {
 
     @Json(name = "Default")
-    default("Default"),
+    DEFAULT("Default"),
 
     @Json(name = "DayBeginning")
-    dayBeginning("DayBeginning"),
+    DAY_BEGINNING("DayBeginning"),
 
     @Json(name = "CertainDate")
-    certainDate("CertainDate"),
+    CERTAIN_DATE("CertainDate"),
 
     @Json(name = "MonthBeginning")
-    monthBeginning("MonthBeginning");
+    MONTH_BEGINNING("MonthBeginning");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

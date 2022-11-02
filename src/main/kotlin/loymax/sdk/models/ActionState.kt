@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Состояние действия.
  *
- * Values: required,custom
+ * Values: REQUIRED,CUSTOM
  */
 
 enum class ActionState(val value: kotlin.String) {
 
     @Json(name = "Required")
-    required("Required"),
+    REQUIRED("Required"),
 
     @Json(name = "Custom")
-    custom("Custom");
+    CUSTOM("Custom");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

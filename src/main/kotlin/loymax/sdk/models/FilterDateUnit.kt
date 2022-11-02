@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: year,month,day
+ * Values: YEAR,MONTH,DAY
  */
 
 enum class FilterDateUnit(val value: kotlin.String) {
 
     @Json(name = "Year")
-    year("Year"),
+    YEAR("Year"),
 
     @Json(name = "Month")
-    month("Month"),
+    MONTH("Month"),
 
     @Json(name = "Day")
-    day("Day");
+    DAY("Day");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

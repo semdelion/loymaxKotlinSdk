@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип нотификатора (номер телефона/адрес email).  На него будет высылаться код подтверждения.
  *
- * Values: phone,email
+ * Values: PHONE,EMAIL
  */
 
 enum class NotifierType(val value: kotlin.String) {
 
     @Json(name = "Phone")
-    phone("Phone"),
+    PHONE("Phone"),
 
     @Json(name = "Email")
-    email("Email");
+    EMAIL("Email");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

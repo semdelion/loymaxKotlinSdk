@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * The {Loymax.ImportExport.Dto.Offers.Actions.CounterOperationType}.
  *
- * Values: reduce,increase,establish
+ * Values: REDUCE,INCREASE,ESTABLISH
  */
 
 enum class CounterOperationType(val value: kotlin.String) {
 
     @Json(name = "Reduce")
-    reduce("Reduce"),
+    REDUCE("Reduce"),
 
     @Json(name = "Increase")
-    increase("Increase"),
+    INCREASE("Increase"),
 
     @Json(name = "Establish")
-    establish("Establish");
+    ESTABLISH("Establish");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

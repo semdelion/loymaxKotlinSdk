@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * Тип элемента.
  *
- * Values: id
+ * Values: ID
  */
 
 enum class ItemType(val value: kotlin.String) {
 
     @Json(name = "Id")
-    id("Id");
+    ID("Id");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

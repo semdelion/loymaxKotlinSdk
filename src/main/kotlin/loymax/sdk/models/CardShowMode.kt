@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: active,deleted,allFromGroup
+ * Values: ACTIVE,DELETED,ALL_FROM_GROUP
  */
 
 enum class CardShowMode(val value: kotlin.String) {
 
     @Json(name = "Active")
-    active("Active"),
+    ACTIVE("Active"),
 
     @Json(name = "Deleted")
-    deleted("Deleted"),
+    DELETED("Deleted"),
 
     @Json(name = "AllFromGroup")
-    allFromGroup("AllFromGroup");
+    ALL_FROM_GROUP("AllFromGroup");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

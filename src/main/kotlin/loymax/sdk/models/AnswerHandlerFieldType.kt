@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип.
  *
- * Values: string,int
+ * Values: STRING,INT
  */
 
 enum class AnswerHandlerFieldType(val value: kotlin.String) {
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "Int")
-    int("Int");
+    INT("Int");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

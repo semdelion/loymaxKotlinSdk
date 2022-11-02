@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: fromHistory,active,inactive
+ * Values: FROM_HISTORY,ACTIVE,INACTIVE
  */
 
 enum class PushableDeviceSearchOption(val value: kotlin.String) {
 
     @Json(name = "FromHistory")
-    fromHistory("FromHistory"),
+    FROM_HISTORY("FromHistory"),
 
     @Json(name = "Active")
-    active("Active"),
+    ACTIVE("Active"),
 
     @Json(name = "Inactive")
-    inactive("Inactive");
+    INACTIVE("Inactive");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

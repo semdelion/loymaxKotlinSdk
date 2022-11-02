@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: required,noRequired
+ * Values: REQUIRED,NO_REQUIRED
  */
 
 enum class QuestionRequiredType(val value: kotlin.String) {
 
     @Json(name = "Required")
-    required("Required"),
+    REQUIRED("Required"),
 
     @Json(name = "NoRequired")
-    noRequired("NoRequired");
+    NO_REQUIRED("NoRequired");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

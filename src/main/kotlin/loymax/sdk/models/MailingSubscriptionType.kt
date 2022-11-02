@@ -21,34 +21,34 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: cashback,payment,refill,offer,system,mailing,refund,deviceEmulation
+ * Values: CASHBACK,PAYMENT,REFILL,OFFER,SYSTEM,MAILING,REFUND,DEVICE_EMULATION
  */
 
 enum class MailingSubscriptionType(val value: kotlin.String) {
 
     @Json(name = "Cashback")
-    cashback("Cashback"),
+    CASHBACK("Cashback"),
 
     @Json(name = "Payment")
-    payment("Payment"),
+    PAYMENT("Payment"),
 
     @Json(name = "Refill")
-    refill("Refill"),
+    REFILL("Refill"),
 
     @Json(name = "Offer")
-    offer("Offer"),
+    OFFER("Offer"),
 
     @Json(name = "System")
-    system("System"),
+    SYSTEM("System"),
 
     @Json(name = "Mailing")
-    mailing("Mailing"),
+    MAILING("Mailing"),
 
     @Json(name = "Refund")
-    refund("Refund"),
+    REFUND("Refund"),
 
     @Json(name = "DeviceEmulation")
-    deviceEmulation("DeviceEmulation");
+    DEVICE_EMULATION("DeviceEmulation");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

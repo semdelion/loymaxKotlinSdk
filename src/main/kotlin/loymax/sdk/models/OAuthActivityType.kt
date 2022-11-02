@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: reaction,comment,share
+ * Values: REACTION,COMMENT,SHARE
  */
 
 enum class OAuthActivityType(val value: kotlin.String) {
 
     @Json(name = "Reaction")
-    reaction("Reaction"),
+    REACTION("Reaction"),
 
     @Json(name = "Comment")
-    comment("Comment"),
+    COMMENT("Comment"),
 
     @Json(name = "Share")
-    share("Share");
+    SHARE("Share");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

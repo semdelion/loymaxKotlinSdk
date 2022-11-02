@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: version20,version22,version30,version32
+ * Values: VERSION20,VERSION22,VERSION30,VERSION32
  */
 
 enum class XmlVersion(val value: kotlin.String) {
 
     @Json(name = "Version20")
-    version20("Version20"),
+    VERSION20("Version20"),
 
     @Json(name = "Version22")
-    version22("Version22"),
+    VERSION22("Version22"),
 
     @Json(name = "Version30")
-    version30("Version30"),
+    VERSION30("Version30"),
 
     @Json(name = "Version32")
-    version32("Version32");
+    VERSION32("Version32");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

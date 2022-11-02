@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: number,barCode,qRCode,strip1,strip2,strip3
+ * Values: NUMBER,BAR_CODE,QR_CODE,STRIP1,STRIP2,STRIP3
  */
 
 enum class LabelType(val value: kotlin.String) {
 
     @Json(name = "Number")
-    number("Number"),
+    NUMBER("Number"),
 
     @Json(name = "BarCode")
-    barCode("BarCode"),
+    BAR_CODE("BarCode"),
 
     @Json(name = "QRCode")
-    qRCode("QRCode"),
+    QR_CODE("QRCode"),
 
     @Json(name = "Strip1")
-    strip1("Strip1"),
+    STRIP1("Strip1"),
 
     @Json(name = "Strip2")
-    strip2("Strip2"),
+    STRIP2("Strip2"),
 
     @Json(name = "Strip3")
-    strip3("Strip3");
+    STRIP3("Strip3");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

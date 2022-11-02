@@ -21,76 +21,76 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: eventDateTime,sourceDateTime,person,card,partner,device,merchant,oAuthIdentifierInfo,oAuthActivityType,oAuthObjectId,oAuthGroupId,accountGroup,refundedPurchase,referral,purchase,legal,eventDay,eventMonth,eventYear,week,good,offer
+ * Values: EVENT_DATE_TIME,SOURCE_DATE_TIME,PERSON,CARD,PARTNER,DEVICE,MERCHANT,O_AUTH_IDENTIFIER_INFO,O_AUTH_ACTIVITY_TYPE,O_AUTH_OBJECT_ID,O_AUTH_GROUP_ID,ACCOUNT_GROUP,REFUNDED_PURCHASE,REFERRAL,PURCHASE,LEGAL,EVENT_DAY,EVENT_MONTH,EVENT_YEAR,WEEK,GOOD,OFFER
  */
 
 enum class CounterTarget(val value: kotlin.String) {
 
     @Json(name = "EventDateTime")
-    eventDateTime("EventDateTime"),
+    EVENT_DATE_TIME("EventDateTime"),
 
     @Json(name = "SourceDateTime")
-    sourceDateTime("SourceDateTime"),
+    SOURCE_DATE_TIME("SourceDateTime"),
 
     @Json(name = "Person")
-    person("Person"),
+    PERSON("Person"),
 
     @Json(name = "Card")
-    card("Card"),
+    CARD("Card"),
 
     @Json(name = "Partner")
-    partner("Partner"),
+    PARTNER("Partner"),
 
     @Json(name = "Device")
-    device("Device"),
+    DEVICE("Device"),
 
     @Json(name = "Merchant")
-    merchant("Merchant"),
+    MERCHANT("Merchant"),
 
     @Json(name = "OAuthIdentifierInfo")
-    oAuthIdentifierInfo("OAuthIdentifierInfo"),
+    O_AUTH_IDENTIFIER_INFO("OAuthIdentifierInfo"),
 
     @Json(name = "OAuthActivityType")
-    oAuthActivityType("OAuthActivityType"),
+    O_AUTH_ACTIVITY_TYPE("OAuthActivityType"),
 
     @Json(name = "OAuthObjectId")
-    oAuthObjectId("OAuthObjectId"),
+    O_AUTH_OBJECT_ID("OAuthObjectId"),
 
     @Json(name = "OAuthGroupId")
-    oAuthGroupId("OAuthGroupId"),
+    O_AUTH_GROUP_ID("OAuthGroupId"),
 
     @Json(name = "AccountGroup")
-    accountGroup("AccountGroup"),
+    ACCOUNT_GROUP("AccountGroup"),
 
     @Json(name = "RefundedPurchase")
-    refundedPurchase("RefundedPurchase"),
+    REFUNDED_PURCHASE("RefundedPurchase"),
 
     @Json(name = "Referral")
-    referral("Referral"),
+    REFERRAL("Referral"),
 
     @Json(name = "Purchase")
-    purchase("Purchase"),
+    PURCHASE("Purchase"),
 
     @Json(name = "Legal")
-    legal("Legal"),
+    LEGAL("Legal"),
 
     @Json(name = "EventDay")
-    eventDay("EventDay"),
+    EVENT_DAY("EventDay"),
 
     @Json(name = "EventMonth")
-    eventMonth("EventMonth"),
+    EVENT_MONTH("EventMonth"),
 
     @Json(name = "EventYear")
-    eventYear("EventYear"),
+    EVENT_YEAR("EventYear"),
 
     @Json(name = "Week")
-    week("Week"),
+    WEEK("Week"),
 
     @Json(name = "Good")
-    good("Good"),
+    GOOD("Good"),
 
     @Json(name = "Offer")
-    offer("Offer");
+    OFFER("Offer");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

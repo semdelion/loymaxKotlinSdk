@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * Состояние.
  *
- * Values: normal
+ * Values: NORMAL
  */
 
 enum class BookletEmissionState(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal");
+    NORMAL("Normal");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: mail,sms,push,viber,socialNetworks,chatBot
+ * Values: MAIL,SMS,PUSH,VIBER,SOCIAL_NETWORKS,CHAT_BOT
  */
 
 enum class MailingWaySendType(val value: kotlin.String) {
 
     @Json(name = "Mail")
-    mail("Mail"),
+    MAIL("Mail"),
 
     @Json(name = "Sms")
-    sms("Sms"),
+    SMS("Sms"),
 
     @Json(name = "Push")
-    push("Push"),
+    PUSH("Push"),
 
     @Json(name = "Viber")
-    viber("Viber"),
+    VIBER("Viber"),
 
     @Json(name = "SocialNetworks")
-    socialNetworks("SocialNetworks"),
+    SOCIAL_NETWORKS("SocialNetworks"),
 
     @Json(name = "ChatBot")
-    chatBot("ChatBot");
+    CHAT_BOT("ChatBot");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

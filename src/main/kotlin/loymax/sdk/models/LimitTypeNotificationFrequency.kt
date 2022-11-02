@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Уведомление будет рассылаться не чаще чем раз в указанный период.              Если не указано, то каждый раз при срабатывании лимита.
  *
- * Values: hour,day,week,month
+ * Values: HOUR,DAY,WEEK,MONTH
  */
 
 enum class LimitTypeNotificationFrequency(val value: kotlin.String) {
 
     @Json(name = "Hour")
-    hour("Hour"),
+    HOUR("Hour"),
 
     @Json(name = "Day")
-    day("Day"),
+    DAY("Day"),
 
     @Json(name = "Week")
-    week("Week"),
+    WEEK("Week"),
 
     @Json(name = "Month")
-    month("Month");
+    MONTH("Month");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

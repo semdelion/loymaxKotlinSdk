@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Состояние операции (NotProcessed – необработанная, Processed – обработанная,  Suspended - приостановлена).
  *
- * Values: reserved,initialized,confirmed,canceled
+ * Values: RESERVED,INITIALIZED,CONFIRMED,CANCELED
  */
 
 enum class TransactionState(val value: kotlin.String) {
 
     @Json(name = "Reserved")
-    reserved("Reserved"),
+    RESERVED("Reserved"),
 
     @Json(name = "Initialized")
-    initialized("Initialized"),
+    INITIALIZED("Initialized"),
 
     @Json(name = "Confirmed")
-    confirmed("Confirmed"),
+    CONFIRMED("Confirmed"),
 
     @Json(name = "Canceled")
-    canceled("Canceled");
+    CANCELED("Canceled");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

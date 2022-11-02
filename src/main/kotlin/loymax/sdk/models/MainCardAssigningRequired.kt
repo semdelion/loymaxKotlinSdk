@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Статус возможности прикрепления основной карты.
  *
- * Values: notAssign,assign,assignOptional
+ * Values: NOT_ASSIGN,ASSIGN,ASSIGN_OPTIONAL
  */
 
 enum class MainCardAssigningRequired(val value: kotlin.String) {
 
     @Json(name = "NotAssign")
-    notAssign("NotAssign"),
+    NOT_ASSIGN("NotAssign"),
 
     @Json(name = "Assign")
-    assign("Assign"),
+    ASSIGN("Assign"),
 
     @Json(name = "AssignOptional")
-    assignOptional("AssignOptional");
+    ASSIGN_OPTIONAL("AssignOptional");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

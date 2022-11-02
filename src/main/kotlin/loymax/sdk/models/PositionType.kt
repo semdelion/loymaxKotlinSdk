@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип позиции.
  *
- * Values: normal,birthday,action
+ * Values: NORMAL,BIRTHDAY,ACTION
  */
 
 enum class PositionType(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Birthday")
-    birthday("Birthday"),
+    BIRTHDAY("Birthday"),
 
     @Json(name = "Action")
-    action("Action");
+    ACTION("Action");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

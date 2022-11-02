@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Статус задачи.
  *
- * Values: done,inProcess,planned,cancelled,forInitialize
+ * Values: DONE,IN_PROCESS,PLANNED,CANCELLED,FOR_INITIALIZE
  */
 
 enum class MailingTaskState(val value: kotlin.String) {
 
     @Json(name = "Done")
-    done("Done"),
+    DONE("Done"),
 
     @Json(name = "InProcess")
-    inProcess("InProcess"),
+    IN_PROCESS("InProcess"),
 
     @Json(name = "Planned")
-    planned("Planned"),
+    PLANNED("Planned"),
 
     @Json(name = "Cancelled")
-    cancelled("Cancelled"),
+    CANCELLED("Cancelled"),
 
     @Json(name = "ForInitialize")
-    forInitialize("ForInitialize");
+    FOR_INITIALIZE("ForInitialize");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

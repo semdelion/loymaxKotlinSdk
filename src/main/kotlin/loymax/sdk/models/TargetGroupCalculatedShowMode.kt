@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: notCalculatedOnly,calculatedOnly
+ * Values: NOT_CALCULATED_ONLY,CALCULATED_ONLY
  */
 
 enum class TargetGroupCalculatedShowMode(val value: kotlin.String) {
 
     @Json(name = "NotCalculatedOnly")
-    notCalculatedOnly("NotCalculatedOnly"),
+    NOT_CALCULATED_ONLY("NotCalculatedOnly"),
 
     @Json(name = "CalculatedOnly")
-    calculatedOnly("CalculatedOnly");
+    CALCULATED_ONLY("CalculatedOnly");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

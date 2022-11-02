@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип сегментации по фильтру.
  *
- * Values: exclusive,inclusive
+ * Values: EXCLUSIVE,INCLUSIVE
  */
 
 enum class TargetGroupSegmentationType(val value: kotlin.String) {
 
     @Json(name = "Exclusive")
-    exclusive("Exclusive"),
+    EXCLUSIVE("Exclusive"),
 
     @Json(name = "Inclusive")
-    inclusive("Inclusive");
+    INCLUSIVE("Inclusive");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

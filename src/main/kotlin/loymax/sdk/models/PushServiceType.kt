@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Тип сервиса для пушей.
  *
- * Values: unknown,apns,fcm,hms
+ * Values: UNKNOWN,APNS,FCM,HMS
  */
 
 enum class PushServiceType(val value: kotlin.String) {
 
     @Json(name = "Unknown")
-    unknown("Unknown"),
+    UNKNOWN("Unknown"),
 
     @Json(name = "Apns")
-    apns("Apns"),
+    APNS("Apns"),
 
     @Json(name = "Fcm")
-    fcm("Fcm"),
+    FCM("Fcm"),
 
     @Json(name = "Hms")
-    hms("Hms");
+    HMS("Hms");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип ограничения.
  *
- * Values: `value`,numberOfValues,sumOfChanges
+ * Values: VALUE,NUMBER_OF_VALUES,SUM_OF_CHANGES
  */
 
 enum class CounterFilterRestrictionsType(val value: kotlin.String) {
 
     @Json(name = "Value")
-    `value`("Value"),
+    VALUE("Value"),
 
     @Json(name = "NumberOfValues")
-    numberOfValues("NumberOfValues"),
+    NUMBER_OF_VALUES("NumberOfValues"),
 
     @Json(name = "SumOfChanges")
-    sumOfChanges("SumOfChanges");
+    SUM_OF_CHANGES("SumOfChanges");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

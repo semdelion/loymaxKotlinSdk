@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Сравниваемый статус пользователя.
  *
- * Values: current,new
+ * Values: CURRENT,NEW
  */
 
 enum class StatusValueType(val value: kotlin.String) {
 
     @Json(name = "Current")
-    current("Current"),
+    CURRENT("Current"),
 
     @Json(name = "New")
-    new("New");
+    NEW("New");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

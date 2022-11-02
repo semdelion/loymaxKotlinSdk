@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * Тип значения.
  *
- * Values: integer,string,currencyExternalId,offerCategory,pushGateway
+ * Values: INTEGER,STRING,CURRENCY_EXTERNAL_ID,OFFER_CATEGORY,PUSH_GATEWAY
  */
 
 enum class ConfigValueType(val value: kotlin.String) {
 
     @Json(name = "Integer")
-    integer("Integer"),
+    INTEGER("Integer"),
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "CurrencyExternalId")
-    currencyExternalId("CurrencyExternalId"),
+    CURRENCY_EXTERNAL_ID("CurrencyExternalId"),
 
     @Json(name = "OfferCategory")
-    offerCategory("OfferCategory"),
+    OFFER_CATEGORY("OfferCategory"),
 
     @Json(name = "PushGateway")
-    pushGateway("PushGateway");
+    PUSH_GATEWAY("PushGateway");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Состояние  шаблона для генерации номеров выпусков.
  *
- * Values: normal,deleted
+ * Values: NORMAL,DELETED
  */
 
 enum class EmissionTemplateState(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Deleted")
-    deleted("Deleted");
+    DELETED("Deleted");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

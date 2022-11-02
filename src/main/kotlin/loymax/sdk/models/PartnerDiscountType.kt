@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип скидки (прямая или отложенная).
  *
- * Values: discount,cashback
+ * Values: DISCOUNT,CASHBACK
  */
 
 enum class PartnerDiscountType(val value: kotlin.String) {
 
     @Json(name = "Discount")
-    discount("Discount"),
+    DISCOUNT("Discount"),
 
     @Json(name = "Cashback")
-    cashback("Cashback");
+    CASHBACK("Cashback");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

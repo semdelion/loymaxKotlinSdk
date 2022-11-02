@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * Период ограничения.
  *
- * Values: once,hour,day,week,month,unlimited
+ * Values: ONCE,HOUR,DAY,WEEK,MONTH,UNLIMITED
  */
 
 enum class LimitPeriod(val value: kotlin.String) {
 
     @Json(name = "Once")
-    once("Once"),
+    ONCE("Once"),
 
     @Json(name = "Hour")
-    hour("Hour"),
+    HOUR("Hour"),
 
     @Json(name = "Day")
-    day("Day"),
+    DAY("Day"),
 
     @Json(name = "Week")
-    week("Week"),
+    WEEK("Week"),
 
     @Json(name = "Month")
-    month("Month"),
+    MONTH("Month"),
 
     @Json(name = "Unlimited")
-    unlimited("Unlimited");
+    UNLIMITED("Unlimited");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

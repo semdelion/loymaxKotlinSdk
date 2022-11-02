@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Состояние операции.
  *
- * Values: created,confirmed,canceled,deleted
+ * Values: CREATED,CONFIRMED,CANCELED,DELETED
  */
 
 enum class OperationState(val value: kotlin.String) {
 
     @Json(name = "Created")
-    created("Created"),
+    CREATED("Created"),
 
     @Json(name = "Confirmed")
-    confirmed("Confirmed"),
+    CONFIRMED("Confirmed"),
 
     @Json(name = "Canceled")
-    canceled("Canceled"),
+    CANCELED("Canceled"),
 
     @Json(name = "Deleted")
-    deleted("Deleted");
+    DELETED("Deleted");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

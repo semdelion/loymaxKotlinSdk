@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: normal,hidden
+ * Values: NORMAL,HIDDEN
  */
 
 enum class BrandInfoState(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Hidden")
-    hidden("Hidden");
+    HIDDEN("Hidden");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

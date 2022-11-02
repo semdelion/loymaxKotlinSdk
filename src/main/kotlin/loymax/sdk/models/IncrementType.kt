@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип инкремента счетчика.
  *
- * Values: constant,contextVariable,issuedPreference
+ * Values: CONSTANT,CONTEXT_VARIABLE,ISSUED_PREFERENCE
  */
 
 enum class IncrementType(val value: kotlin.String) {
 
     @Json(name = "Constant")
-    constant("Constant"),
+    CONSTANT("Constant"),
 
     @Json(name = "ContextVariable")
-    contextVariable("ContextVariable"),
+    CONTEXT_VARIABLE("ContextVariable"),
 
     @Json(name = "IssuedPreference")
-    issuedPreference("IssuedPreference");
+    ISSUED_PREFERENCE("IssuedPreference");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

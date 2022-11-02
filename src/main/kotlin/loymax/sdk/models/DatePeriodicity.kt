@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Mode.
  *
- * Values: once,everyYear,everyMonth
+ * Values: ONCE,EVERY_YEAR,EVERY_MONTH
  */
 
 enum class DatePeriodicity(val value: kotlin.String) {
 
     @Json(name = "Once")
-    once("Once"),
+    ONCE("Once"),
 
     @Json(name = "EveryYear")
-    everyYear("EveryYear"),
+    EVERY_YEAR("EveryYear"),
 
     @Json(name = "EveryMonth")
-    everyMonth("EveryMonth");
+    EVERY_MONTH("EveryMonth");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Уточнение границ плавающего периода для даты покупки.
  *
- * Values: none,begin,end
+ * Values: NONE,BEGIN,END
  */
 
 enum class TimeIntervalRoundType(val value: kotlin.String) {
 
     @Json(name = "None")
-    none("None"),
+    NONE("None"),
 
     @Json(name = "Begin")
-    begin("Begin"),
+    BEGIN("Begin"),
 
     @Json(name = "End")
-    end("End");
+    END("End");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

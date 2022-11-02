@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Источник замены карты.
  *
- * Values: userPortal,callCenter,device
+ * Values: USER_PORTAL,CALL_CENTER,DEVICE
  */
 
 enum class ReplaceCardSource(val value: kotlin.String) {
 
     @Json(name = "UserPortal")
-    userPortal("UserPortal"),
+    USER_PORTAL("UserPortal"),
 
     @Json(name = "CallCenter")
-    callCenter("CallCenter"),
+    CALL_CENTER("CallCenter"),
 
     @Json(name = "Device")
-    device("Device");
+    DEVICE("Device");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

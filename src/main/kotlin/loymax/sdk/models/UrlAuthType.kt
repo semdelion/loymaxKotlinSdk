@@ -21,13 +21,13 @@ import com.squareup.moshi.Json
 /**
  * Тип авторизации (null — не указан, Standard — стандартный).
  *
- * Values: standard
+ * Values: STANDARD
  */
 
 enum class UrlAuthType(val value: kotlin.String) {
 
     @Json(name = "Standard")
-    standard("Standard");
+    STANDARD("Standard");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

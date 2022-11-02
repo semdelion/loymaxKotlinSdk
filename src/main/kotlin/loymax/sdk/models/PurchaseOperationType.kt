@@ -21,43 +21,43 @@ import com.squareup.moshi.Json
 /**
  * Тип операции покупки.
  *
- * Values: unknown,payment,deposit,cashback,refund,directDiscount,confirmPurchase,giftCardPayment,cancelPurchase,giftCertificatePayment,confirmRefundPurchase
+ * Values: UNKNOWN,PAYMENT,DEPOSIT,CASHBACK,REFUND,DIRECT_DISCOUNT,CONFIRM_PURCHASE,GIFT_CARD_PAYMENT,CANCEL_PURCHASE,GIFT_CERTIFICATE_PAYMENT,CONFIRM_REFUND_PURCHASE
  */
 
 enum class PurchaseOperationType(val value: kotlin.String) {
 
     @Json(name = "Unknown")
-    unknown("Unknown"),
+    UNKNOWN("Unknown"),
 
     @Json(name = "Payment")
-    payment("Payment"),
+    PAYMENT("Payment"),
 
     @Json(name = "Deposit")
-    deposit("Deposit"),
+    DEPOSIT("Deposit"),
 
     @Json(name = "Cashback")
-    cashback("Cashback"),
+    CASHBACK("Cashback"),
 
     @Json(name = "Refund")
-    refund("Refund"),
+    REFUND("Refund"),
 
     @Json(name = "DirectDiscount")
-    directDiscount("DirectDiscount"),
+    DIRECT_DISCOUNT("DirectDiscount"),
 
     @Json(name = "ConfirmPurchase")
-    confirmPurchase("ConfirmPurchase"),
+    CONFIRM_PURCHASE("ConfirmPurchase"),
 
     @Json(name = "GiftCardPayment")
-    giftCardPayment("GiftCardPayment"),
+    GIFT_CARD_PAYMENT("GiftCardPayment"),
 
     @Json(name = "CancelPurchase")
-    cancelPurchase("CancelPurchase"),
+    CANCEL_PURCHASE("CancelPurchase"),
 
     @Json(name = "GiftCertificatePayment")
-    giftCertificatePayment("GiftCertificatePayment"),
+    GIFT_CERTIFICATE_PAYMENT("GiftCertificatePayment"),
 
     @Json(name = "ConfirmRefundPurchase")
-    confirmRefundPurchase("ConfirmRefundPurchase");
+    CONFIRM_REFUND_PURCHASE("ConfirmRefundPurchase");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

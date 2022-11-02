@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Тип сортировки товаров при покупке.
  *
- * Values: positionAscending,positionDescending,priceAscending,priceDescending
+ * Values: POSITION_ASCENDING,POSITION_DESCENDING,PRICE_ASCENDING,PRICE_DESCENDING
  */
 
 enum class ChequeGoodsSortType(val value: kotlin.String) {
 
     @Json(name = "PositionAscending")
-    positionAscending("PositionAscending"),
+    POSITION_ASCENDING("PositionAscending"),
 
     @Json(name = "PositionDescending")
-    positionDescending("PositionDescending"),
+    POSITION_DESCENDING("PositionDescending"),
 
     @Json(name = "PriceAscending")
-    priceAscending("PriceAscending"),
+    PRICE_ASCENDING("PriceAscending"),
 
     @Json(name = "PriceDescending")
-    priceDescending("PriceDescending");
+    PRICE_DESCENDING("PriceDescending");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,52 +21,52 @@ import com.squareup.moshi.Json
 /**
  * Тип расчёта.
  *
- * Values: directDiscount,cashbackDiscount,limitPayment,confirmPurchase,cancelPurchase,payment,purchaseRefund,balance,issueCard,personActivity,sendPasswordToCheque,preCalculateCashback,goodsCalculateDiscount,goodsCalculateCashback
+ * Values: DIRECT_DISCOUNT,CASHBACK_DISCOUNT,LIMIT_PAYMENT,CONFIRM_PURCHASE,CANCEL_PURCHASE,PAYMENT,PURCHASE_REFUND,BALANCE,ISSUE_CARD,PERSON_ACTIVITY,SEND_PASSWORD_TO_CHEQUE,PRE_CALCULATE_CASHBACK,GOODS_CALCULATE_DISCOUNT,GOODS_CALCULATE_CASHBACK
  */
 
 enum class OfferCalculationType(val value: kotlin.String) {
 
     @Json(name = "DirectDiscount")
-    directDiscount("DirectDiscount"),
+    DIRECT_DISCOUNT("DirectDiscount"),
 
     @Json(name = "CashbackDiscount")
-    cashbackDiscount("CashbackDiscount"),
+    CASHBACK_DISCOUNT("CashbackDiscount"),
 
     @Json(name = "LimitPayment")
-    limitPayment("LimitPayment"),
+    LIMIT_PAYMENT("LimitPayment"),
 
     @Json(name = "ConfirmPurchase")
-    confirmPurchase("ConfirmPurchase"),
+    CONFIRM_PURCHASE("ConfirmPurchase"),
 
     @Json(name = "CancelPurchase")
-    cancelPurchase("CancelPurchase"),
+    CANCEL_PURCHASE("CancelPurchase"),
 
     @Json(name = "Payment")
-    payment("Payment"),
+    PAYMENT("Payment"),
 
     @Json(name = "PurchaseRefund")
-    purchaseRefund("PurchaseRefund"),
+    PURCHASE_REFUND("PurchaseRefund"),
 
     @Json(name = "Balance")
-    balance("Balance"),
+    BALANCE("Balance"),
 
     @Json(name = "IssueCard")
-    issueCard("IssueCard"),
+    ISSUE_CARD("IssueCard"),
 
     @Json(name = "PersonActivity")
-    personActivity("PersonActivity"),
+    PERSON_ACTIVITY("PersonActivity"),
 
     @Json(name = "SendPasswordToCheque")
-    sendPasswordToCheque("SendPasswordToCheque"),
+    SEND_PASSWORD_TO_CHEQUE("SendPasswordToCheque"),
 
     @Json(name = "PreCalculateCashback")
-    preCalculateCashback("PreCalculateCashback"),
+    PRE_CALCULATE_CASHBACK("PreCalculateCashback"),
 
     @Json(name = "GoodsCalculateDiscount")
-    goodsCalculateDiscount("GoodsCalculateDiscount"),
+    GOODS_CALCULATE_DISCOUNT("GoodsCalculateDiscount"),
 
     @Json(name = "GoodsCalculateCashback")
-    goodsCalculateCashback("GoodsCalculateCashback");
+    GOODS_CALCULATE_CASHBACK("GoodsCalculateCashback");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

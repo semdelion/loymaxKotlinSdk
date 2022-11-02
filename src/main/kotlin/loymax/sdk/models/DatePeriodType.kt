@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Временной период тип.
  *
- * Values: dates,beforeDate,afterDate
+ * Values: DATES,BEFORE_DATE,AFTER_DATE
  */
 
 enum class DatePeriodType(val value: kotlin.String) {
 
     @Json(name = "Dates")
-    dates("Dates"),
+    DATES("Dates"),
 
     @Json(name = "BeforeDate")
-    beforeDate("BeforeDate"),
+    BEFORE_DATE("BeforeDate"),
 
     @Json(name = "AfterDate")
-    afterDate("AfterDate");
+    AFTER_DATE("AfterDate");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

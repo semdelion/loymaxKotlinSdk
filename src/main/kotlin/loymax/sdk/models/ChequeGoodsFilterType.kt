@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип фильтрации.
  *
- * Values: onlyGoods,goodsQuantity,goodsAmount
+ * Values: ONLY_GOODS,GOODS_QUANTITY,GOODS_AMOUNT
  */
 
 enum class ChequeGoodsFilterType(val value: kotlin.String) {
 
     @Json(name = "OnlyGoods")
-    onlyGoods("OnlyGoods"),
+    ONLY_GOODS("OnlyGoods"),
 
     @Json(name = "GoodsQuantity")
-    goodsQuantity("GoodsQuantity"),
+    GOODS_QUANTITY("GoodsQuantity"),
 
     @Json(name = "GoodsAmount")
-    goodsAmount("GoodsAmount");
+    GOODS_AMOUNT("GoodsAmount");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

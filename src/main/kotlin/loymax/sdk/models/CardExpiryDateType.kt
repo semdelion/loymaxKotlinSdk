@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: activationDate,creationDate
+ * Values: ACTIVATION_DATE,CREATION_DATE
  */
 
 enum class CardExpiryDateType(val value: kotlin.String) {
 
     @Json(name = "ActivationDate")
-    activationDate("ActivationDate"),
+    ACTIVATION_DATE("ActivationDate"),
 
     @Json(name = "CreationDate")
-    creationDate("CreationDate");
+    CREATION_DATE("CreationDate");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

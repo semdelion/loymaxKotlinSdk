@@ -21,25 +21,25 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: ios,android,windowsPhone,harmony,unknown
+ * Values: IOS,ANDROID,WINDOWS_PHONE,HARMONY,UNKNOWN
  */
 
 enum class PlatformType(val value: kotlin.String) {
 
     @Json(name = "Ios")
-    ios("Ios"),
+    IOS("Ios"),
 
     @Json(name = "Android")
-    android("Android"),
+    ANDROID("Android"),
 
     @Json(name = "WindowsPhone")
-    windowsPhone("WindowsPhone"),
+    WINDOWS_PHONE("WindowsPhone"),
 
     @Json(name = "Harmony")
-    harmony("Harmony"),
+    HARMONY("Harmony"),
 
     @Json(name = "Unknown")
-    unknown("Unknown");
+    UNKNOWN("Unknown");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

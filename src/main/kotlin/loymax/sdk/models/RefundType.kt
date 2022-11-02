@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип возврата (normal — обычный, BonusFirst — приоритетный возврат бонусов).
  *
- * Values: normal,bonusFirst
+ * Values: NORMAL,BONUS_FIRST
  */
 
 enum class RefundType(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "BonusFirst")
-    bonusFirst("BonusFirst");
+    BONUS_FIRST("BonusFirst");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

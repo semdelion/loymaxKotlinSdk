@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип баланса.
  *
- * Values: current,withCheque
+ * Values: CURRENT,WITH_CHEQUE
  */
 
 enum class PersonBalanceTypeFilter(val value: kotlin.String) {
 
     @Json(name = "Current")
-    current("Current"),
+    CURRENT("Current"),
 
     @Json(name = "WithCheque")
-    withCheque("WithCheque");
+    WITH_CHEQUE("WithCheque");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

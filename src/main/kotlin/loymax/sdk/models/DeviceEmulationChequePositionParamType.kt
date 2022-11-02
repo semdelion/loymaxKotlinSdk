@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Тип.
  *
- * Values: decimal,string
+ * Values: DECIMAL,STRING
  */
 
 enum class DeviceEmulationChequePositionParamType(val value: kotlin.String) {
 
     @Json(name = "Decimal")
-    decimal("Decimal"),
+    DECIMAL("Decimal"),
 
     @Json(name = "String")
-    string("String");
+    STRING("String");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

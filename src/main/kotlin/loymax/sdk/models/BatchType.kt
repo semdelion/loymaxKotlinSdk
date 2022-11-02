@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: withdraw,deposit
+ * Values: WITHDRAW,DEPOSIT
  */
 
 enum class BatchType(val value: kotlin.String) {
 
     @Json(name = "Withdraw")
-    withdraw("Withdraw"),
+    WITHDRAW("Withdraw"),
 
     @Json(name = "Deposit")
-    deposit("Deposit");
+    DEPOSIT("Deposit");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

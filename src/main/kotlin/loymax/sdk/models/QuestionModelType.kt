@@ -21,28 +21,28 @@ import com.squareup.moshi.Json
 /**
  * Тип вопроса.
  *
- * Values: int,double,boolean,string,date,select
+ * Values: INT,DOUBLE,BOOLEAN,STRING,DATE,SELECT
  */
 
 enum class QuestionModelType(val value: kotlin.String) {
 
     @Json(name = "Int")
-    int("Int"),
+    INT("Int"),
 
     @Json(name = "Double")
-    double("Double"),
+    DOUBLE("Double"),
 
     @Json(name = "Boolean")
-    boolean("Boolean"),
+    BOOLEAN("Boolean"),
 
     @Json(name = "String")
-    string("String"),
+    STRING("String"),
 
     @Json(name = "Date")
-    date("Date"),
+    DATE("Date"),
 
     @Json(name = "Select")
-    select("Select");
+    SELECT("Select");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: recreate,add,remove
+ * Values: RECREATE,ADD,REMOVE
  */
 
 enum class OperationTypeEnum(val value: kotlin.String) {
 
     @Json(name = "Recreate")
-    recreate("Recreate"),
+    RECREATE("Recreate"),
 
     @Json(name = "Add")
-    add("Add"),
+    ADD("Add"),
 
     @Json(name = "Remove")
-    remove("Remove");
+    REMOVE("Remove");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

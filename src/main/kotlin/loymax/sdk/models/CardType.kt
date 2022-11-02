@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * Тип карты.
  *
- * Values: general,secondary,virtual
+ * Values: GENERAL,SECONDARY,VIRTUAL
  */
 
 enum class CardType(val value: kotlin.String) {
 
     @Json(name = "General")
-    general("General"),
+    GENERAL("General"),
 
     @Json(name = "Secondary")
-    secondary("Secondary"),
+    SECONDARY("Secondary"),
 
     @Json(name = "Virtual")
-    virtual("Virtual");
+    VIRTUAL("Virtual");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

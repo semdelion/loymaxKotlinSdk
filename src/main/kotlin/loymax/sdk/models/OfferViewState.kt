@@ -21,19 +21,19 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: future,present,past
+ * Values: FUTURE,PRESENT,PAST
  */
 
 enum class OfferViewState(val value: kotlin.String) {
 
     @Json(name = "Future")
-    future("Future"),
+    FUTURE("Future"),
 
     @Json(name = "Present")
-    present("Present"),
+    PRESENT("Present"),
 
     @Json(name = "Past")
-    past("Past");
+    PAST("Past");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

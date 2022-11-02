@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * 
  *
- * Values: notProcessed,processed,suspended,processedWithError
+ * Values: NOT_PROCESSED,PROCESSED,SUSPENDED,PROCESSED_WITH_ERROR
  */
 
 enum class BatchState(val value: kotlin.String) {
 
     @Json(name = "NotProcessed")
-    notProcessed("NotProcessed"),
+    NOT_PROCESSED("NotProcessed"),
 
     @Json(name = "Processed")
-    processed("Processed"),
+    PROCESSED("Processed"),
 
     @Json(name = "Suspended")
-    suspended("Suspended"),
+    SUSPENDED("Suspended"),
 
     @Json(name = "ProcessedWithError")
-    processedWithError("ProcessedWithError");
+    PROCESSED_WITH_ERROR("ProcessedWithError");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

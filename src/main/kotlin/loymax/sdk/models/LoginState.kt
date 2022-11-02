@@ -21,22 +21,22 @@ import com.squareup.moshi.Json
 /**
  * Состояние идентификатора.
  *
- * Values: normal,block,deleted,unverified
+ * Values: NORMAL,BLOCK,DELETED,UNVERIFIED
  */
 
 enum class LoginState(val value: kotlin.String) {
 
     @Json(name = "Normal")
-    normal("Normal"),
+    NORMAL("Normal"),
 
     @Json(name = "Block")
-    block("Block"),
+    BLOCK("Block"),
 
     @Json(name = "Deleted")
-    deleted("Deleted"),
+    DELETED("Deleted"),
 
     @Json(name = "Unverified")
-    unverified("Unverified");
+    UNVERIFIED("Unverified");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

@@ -21,16 +21,16 @@ import com.squareup.moshi.Json
 /**
  * Версия протокола.
  *
- * Values: version10,version20
+ * Values: VERSION10,VERSION20
  */
 
 enum class ProtocolVersion(val value: kotlin.String) {
 
     @Json(name = "Version10")
-    version10("Version10"),
+    VERSION10("Version10"),
 
     @Json(name = "Version20")
-    version20("Version20");
+    VERSION20("Version20");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use

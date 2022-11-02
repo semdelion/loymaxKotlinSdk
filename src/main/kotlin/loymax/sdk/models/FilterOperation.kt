@@ -21,43 +21,43 @@ import com.squareup.moshi.Json
 /**
  * Операция для фильтра.
  *
- * Values: more,less,equals,between,moreOrEqual,lessOrEqual,betweenLessEqual,betweenMoreEqual,betweenEqual,each,isInList
+ * Values: MORE,LESS,EQUALS,BETWEEN,MORE_OR_EQUAL,LESS_OR_EQUAL,BETWEEN_LESS_EQUAL,BETWEEN_MORE_EQUAL,BETWEEN_EQUAL,EACH,IS_IN_LIST
  */
 
 enum class FilterOperation(val value: kotlin.String) {
 
     @Json(name = "More")
-    more("More"),
+    MORE("More"),
 
     @Json(name = "Less")
-    less("Less"),
+    LESS("Less"),
 
     @Json(name = "Equals")
-    equals("Equals"),
+    EQUALS("Equals"),
 
     @Json(name = "Between")
-    between("Between"),
+    BETWEEN("Between"),
 
     @Json(name = "MoreOrEqual")
-    moreOrEqual("MoreOrEqual"),
+    MORE_OR_EQUAL("MoreOrEqual"),
 
     @Json(name = "LessOrEqual")
-    lessOrEqual("LessOrEqual"),
+    LESS_OR_EQUAL("LessOrEqual"),
 
     @Json(name = "BetweenLessEqual")
-    betweenLessEqual("BetweenLessEqual"),
+    BETWEEN_LESS_EQUAL("BetweenLessEqual"),
 
     @Json(name = "BetweenMoreEqual")
-    betweenMoreEqual("BetweenMoreEqual"),
+    BETWEEN_MORE_EQUAL("BetweenMoreEqual"),
 
     @Json(name = "BetweenEqual")
-    betweenEqual("BetweenEqual"),
+    BETWEEN_EQUAL("BetweenEqual"),
 
     @Json(name = "Each")
-    each("Each"),
+    EACH("Each"),
 
     @Json(name = "IsInList")
-    isInList("IsInList");
+    IS_IN_LIST("IsInList");
 
     /**
      * Override toString() to avoid using the enum variable name as the value, and instead use
